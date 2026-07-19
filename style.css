@@ -646,6 +646,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .related-projects {
+        padding: 40px 24px;
+    }
     .related-grid {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -732,5 +735,28 @@ body {
     margin-top: 12px;
     font-size: 14px !important;
     display: none;
+}
+
+@media (max-width: 480px) {
+    .password-input-group {
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 12px;
+        background-color: transparent;
+        border: none;
+        gap: 12px;
+    }
+    .password-input-group input {
+        width: 100%;
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 14px 16px;
+        background-color: #fff;
+    }
+    .password-input-group button {
+        width: 100%;
+        border-radius: 8px;
+        padding: 14px;
+    }
 }
 
