@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution - Siyu Li</title>
+    <meta name="description" content="From rapid PoCs to systemic cloud redesigns.">
+    
+    <!-- SEO & Keywords -->
+    <meta name="keywords" content="Siyu Li, Design Portfolio, UX Design, Interaction Design, Digital Product Designer, Human-centered Design, Aachen, Evolution">
+    <meta name="author" content="Siyu Li">
+    
+    <!-- Open Graph (LinkedIn, WeChat Link Preview) -->
+    <meta property="og:title" content="Evolution - Siyu Li">
+    <meta property="og:description" content="From rapid PoCs to systemic cloud redesigns.">
+    <meta property="og:type" content="website">
+    
+    <!-- Web-Clip / Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-left">
+            <a href="index.html" class="nav-link active">Work</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+        <div class="nav-right">
+            <a href="index.html" class="brand-name">Siyu Li</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </header>
+
+    <div class="mobile-menu-overlay">
+        <button class="mobile-menu-close" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link active">Work</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+        </nav>
+    </div>
+
+    <!-- Password Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Protected Project</h2>
+            <p>This project is password protected.<br>Please enter the password to view.</p>
+            <div class="password-input-group">
+                <input type="password" id="project-password" placeholder="Enter password">
+                <button id="submit-password">Submit</button>
+            </div>
+            <p id="password-error" class="password-error"></p>
+        </div>
+    </div>
+
+    <main id="protected-content" class="project-page" style="display: none;">
+        <!-- Hero Section -->
+        <div class="project-hero-wrapper">
+            <section class="project-hero">
+                <img src="assets/Project-02/Project-02_01.png" alt="Evolution hero" class="project-hero-img">
+            </section>
+        </div>
+
+        <!-- Project Info -->
+        <section class="project-info">
+            <div class="project-header">
+                <h1>Evolution</h1>
+                <p class="subtitle">From rapid PoCs to systemic cloud redesigns.</p>
+            </div>
+            
+            <div class="project-overview">
+                <div class="overview-left">
+                    <h3>Overview</h3>
+                    <p>Navigating the complexities of automotive software to deliver real-world impact. This collection highlights my work at ETAS, ranging from rapid PoCs and Restbus simulations to scalable cloud redesigns and GTM strategies.</p>
+                </div>
+                <div class="overview-right">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>UX &amp; Interaction Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>12 months</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Deliverables</h4>
+                        <p>B2B Cloud Platform &amp; Desktop Softwares</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="project-gallery">
+            <img src="assets/Project-02/Project-02_02.png" alt="Evolution detail 2" loading="lazy">
+            <img src="assets/Project-02/Project-02_03.png" alt="Evolution detail 3" loading="lazy">
+            <img src="assets/Project-02/Project-02_04.png" alt="Evolution detail 4" loading="lazy">
+            <img src="assets/Project-02/Project-02_05.png" alt="Evolution detail 5" loading="lazy">
+            <img src="assets/Project-02/Project-02_06.png" alt="Evolution detail 6" loading="lazy">
+        </section>
+
+        <!-- You May Also Like -->
+        <section class="related-projects">
+            <h3>You may also like</h3>
+            <div class="related-grid">
+                <a href="mater.html" class="related-item">
+                    <img src="assets/Project-01/Project-01_Cover.png" alt="māter" loading="lazy">
+                </a>
+                <a href="trevo.html" class="related-item">
+                    <img src="assets/Project-03/Project-03_Cover.JPG" alt="Trevo" loading="lazy">
+                </a>
+                <a href="chirp.html" class="related-item">
+                    <img src="assets/Project-04/Project-04_Cover.png" alt="Project 4" loading="lazy">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Copyright ©2026 All rights reserved | Siyu Li, Aachen, Germany</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('password-overlay');
+            const content = document.getElementById('protected-content');
+            const input = document.getElementById('project-password');
+            const btn = document.getElementById('submit-password');
+            const error = document.getElementById('password-error');
+            
+            // Check session storage so user doesn't have to re-enter during same session
+            if (sessionStorage.getItem('evolution_unlocked') === 'true') {
+                overlay.style.display = 'none';
+                content.style.display = 'block';
+                return;
+            }
+
+            const checkPassword = () => {
+                if (input.value === 'etas') {
+                    sessionStorage.setItem('evolution_unlocked', 'true');
+                    overlay.style.display = 'none';
+                    content.style.display = 'block';
+                    
+                    // Trigger scroll animation for hero if needed since it was hidden
+                    window.dispatchEvent(new Event('resize')); 
+                } else {
+                    error.style.display = 'block';
+                    error.textContent = 'Incorrect password. Please try again.';
+                    input.value = '';
+                }
+            };
+
+            btn.addEventListener('click', checkPassword);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') checkPassword();
+            });
+        });
+    </script>
+</body>
+</html>
