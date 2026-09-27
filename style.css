@@ -396,7 +396,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header {
         padding: 0 24px;
         justify-content: center;
@@ -714,7 +714,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .project-info, .project-video-container, .related-projects, .responsive-block {
         padding-left: 80px;
         padding-right: 80px;
@@ -790,7 +790,7 @@ body {
     color: #888;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .related-projects {
         padding: 40px 24px;
     }
@@ -1266,8 +1266,17 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    /* Collapse to 1 column for mobile */
+@media (max-width: 1024px) {
+    .refining-block {
+        grid-template-areas:
+            "before"
+            "text"
+            "after" !important;
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 767px) {
     .refining-block {
         grid-template-areas:
             "before"
@@ -1328,7 +1337,7 @@ div.carousel-dots-container.mobile-only {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .refining-block div.carousel-dots-container.mobile-only,
     .empowering-block div.carousel-dots-container.mobile-only {
         display: flex !important;
@@ -1434,7 +1443,7 @@ div.carousel-dots-container.mobile-only {
 }
 
 .empowering-phones img {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     min-width: 0;
     max-width: 100%;
     height: auto;
@@ -1466,7 +1475,7 @@ div.carousel-dots-container.mobile-only {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .empowering-bg-container {
         display: flex;
         flex-direction: column;
@@ -1509,7 +1518,6 @@ div.carousel-dots-container.mobile-only {
     
     .empowering-phones img {
         flex: 0 0 auto;
-        width: 290px;
         max-width: 100%;
         scroll-snap-align: start;
     }
