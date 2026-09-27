@@ -667,7 +667,7 @@ body {
 }
 
 .info-item:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-8px) scale(1.1);
 }
 
 .info-item img {
@@ -926,7 +926,7 @@ body {
 }
 
 .sticky:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-8px) scale(1.1);
     z-index: 10;
 }
 
