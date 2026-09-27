@@ -454,7 +454,112 @@ body {
 .ecosystem-phones img:nth-child(1) { flex: 304; }
 .ecosystem-phones img:nth-child(2) { flex: 313; margin-top: 80px; }
 
+/* Lessons Learned Block */
+.lessons-learned-block {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.lessons-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.lessons-mascot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.lessons-mascot img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.lessons-mascot img:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+.lessons-qr-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.lessons-qr-block img.qr-code {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.lessons-qr-block p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.lessons-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.lessons-right h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.lesson-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.lesson-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.lesson-item p strong {
+    color: #0F62FE;
+    font-weight: 600;
+}
+
 @media (max-width: 1024px) {
+    .lessons-learned-block {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .lessons-left {
+        order: 2;
+    }
+    
+    .lessons-right {
+        order: 1;
+    }
+    
+    .lessons-qr-block {
+        justify-content: center;
+    }
+    
+
     .conversion-ecosystem-block {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -511,6 +616,13 @@ body {
 }
 
 @media (max-width: 767px) {
+    .lessons-qr-block {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+    
+
     .ecosystem-phones {
         width: 100%;
         overflow-x: auto;
