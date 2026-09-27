@@ -1264,9 +1264,11 @@ body {
 }
 
 /* Custom flex scaling to equalize phone body sizes */
-.lowering-phones img:nth-child(1) { flex: 279; }
-.lowering-phones img:nth-child(2) { flex: 325; }
-.lowering-phones img:nth-child(3) { flex: 303; }
+@media (min-width: 1025px) {
+    .lowering-phones img:nth-child(1) { flex: 279; }
+    .lowering-phones img:nth-child(2) { flex: 325; }
+    .lowering-phones img:nth-child(3) { flex: 303; }
+}
 
 /* Foolproof Responsive Display Classes */
 .mobile-only { display: none !important; }
