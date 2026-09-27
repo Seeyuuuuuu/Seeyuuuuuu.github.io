@@ -1104,9 +1104,37 @@ body {
         grid-template-columns: 1fr;
         gap: 60px;
     }
-    .refining-before img, .after-phones img {
+    
+    .refining-before img {
         height: auto;
         width: 100%;
         max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .after-phones {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px calc(50vw - 145px);
+        gap: 24px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .after-phones::-webkit-scrollbar {
+        display: none;
+    }
+
+    .after-phones img {
+        flex: 0 0 auto;
+        width: 290px;
+        height: auto;
+        max-width: none;
+        scroll-snap-align: center;
     }
 }
