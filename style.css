@@ -589,8 +589,14 @@ body {
 }
 
 .content-left {
+    height: 100%;
 }
-
+@media (min-width: 1025px) {
+    .content-left {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .content-left h2 {
     font-size: 26px;
     font-weight: 600;
@@ -614,6 +620,12 @@ body {
     align-items: center;
     gap: 16px;
     margin-top: 40px;
+}
+@media (min-width: 1025px) {
+    .qr-code-box {
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
 }
 
 .qr-code-box img {
@@ -1028,10 +1040,19 @@ body {
 /* Refining for Transparency block */
 .refining-block {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+        "before after"
+        "text text";
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     gap: 60px;
-    align-items: center;
+    row-gap: 100px;
+    align-items: start;
 }
+
+.refining-before { grid-area: before; }
+.refining-after { grid-area: after; }
+.refining-text { grid-area: text; }
 
 .refining-before, .refining-after {
     display: flex;
@@ -1043,8 +1064,8 @@ body {
 .refining-text {
     display: flex;
     flex-direction: column;
-    max-width: 440px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 0;
 }
 
 .refining-text h2 {
@@ -1105,11 +1126,12 @@ body {
 @media (max-width: 1200px) {
     /* Tablet 2-column layout */
     .refining-block {
+        grid-template-areas: 
+            "before text"
+            "after after";
         grid-template-columns: 280px 1fr;
         gap: 60px;
-    }
-    .refining-after {
-        grid-column: 1 / -1;
+        row-gap: 80px;
     }
     
 
@@ -1306,10 +1328,11 @@ body {
 @media (max-width: 768px) {
     /* Collapse to 1 column for mobile */
     .refining-block {
+        grid-template-areas:
+            "before"
+            "text"
+            "after" !important;
         grid-template-columns: 1fr !important;
-    }
-    .refining-after {
-        grid-column: auto !important;
     }
 
     .after-phones {
