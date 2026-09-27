@@ -1095,9 +1095,7 @@ body {
     transform: translateZ(0) scale(1);
 }
 
-.refining-before img:hover, .after-phones img:hover {
-    transform: translateY(-8px) scale(1.05);
-}
+
 
 @media (max-width: 1200px) {
     .refining-block {
@@ -1162,9 +1160,7 @@ body {
     transform: translateZ(0) scale(1);
 }
 
-.woman-img:hover {
-    transform: translateY(-8px) scale(1.02);
-}
+
 
 .lowering-text-top {
     margin-bottom: 40px;
@@ -1206,9 +1202,7 @@ body {
     transform: translateZ(0) scale(1);
 }
 
-.lowering-phones img:hover {
-    transform: translateY(-8px) scale(1.05);
-}
+
 
 @media (max-width: 1024px) {
     .lowering-column {
