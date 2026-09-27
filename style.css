@@ -562,8 +562,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    margin-bottom: 120px;
+    gap: 160px;
+    margin-bottom: 160px;
     max-width: 100%;
     padding: 0 200px;
 }
@@ -956,6 +956,9 @@ body {
 .method-item img {
     width: 100%;
     height: auto;
+    aspect-ratio: 400 / 330;
+    object-fit: contain;
+    object-position: bottom;
     display: block;
     transition: transform 0.3s ease;
     -webkit-backface-visibility: hidden;
