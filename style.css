@@ -1140,6 +1140,7 @@ body {
 /* Lowering the Barrier block */
 .lowering-block {
     align-items: stretch;
+    gap: 240px;
 }
 
 .lowering-column {
