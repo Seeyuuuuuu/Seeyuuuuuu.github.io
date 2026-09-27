@@ -376,6 +376,23 @@ body {
 
 
 @media (max-width: 1024px) {
+    .projecting-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "texttop"
+            "main"
+            "phonestop"
+            "textbottom"
+            "phonesbottom";
+        gap: 60px;
+    }
+    
+    .projecting-phones-wrapper-top, .projecting-phones-wrapper-bottom,
+    .projecting-text-top, .projecting-text-bottom {
+        align-self: start;
+    }
+
     .gallery-container {
         padding: 180px 120px 48px;
     }
@@ -397,6 +414,33 @@ body {
 }
 
 @media (max-width: 767px) {
+    .projecting-phones-top, .projecting-phones-bottom {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 0 16px;
+        gap: 20px;
+        justify-content: flex-start;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .projecting-phones-top::-webkit-scrollbar,
+    .projecting-phones-bottom::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .projecting-phones-top img, .projecting-phones-bottom img {
+        flex: 0 0 auto;
+        max-width: 100%;
+        scroll-snap-align: start;
+    }
+    
+    .projecting-block div.carousel-dots-container.mobile-only {
+        display: flex !important;
+    }
+
     .header {
         padding: 0 24px;
         justify-content: center;
@@ -1112,6 +1156,107 @@ body {
 }
 
 
+
+
+/* Projecting the Future block */
+.projecting-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    row-gap: 80px;
+    align-items: center;
+    grid-template-areas:
+        "main phonestop texttop"
+        "main textbottom phonesbottom";
+}
+
+.projecting-main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+
+.projecting-main-img {
+    width: 471px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projecting-text-top {
+    grid-area: texttop;
+    align-self: start;
+}
+
+.projecting-text-top h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+}
+
+.projecting-text-top p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.projecting-phones-wrapper-top {
+    grid-area: phonestop;
+    align-self: start;
+}
+.projecting-phones-top {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.projecting-phones-top img {
+    flex: 0 1 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projecting-phones-top img:nth-child(1) { width: 230px; }
+.projecting-phones-top img:nth-child(2) { width: 236px; }
+
+.projecting-text-bottom {
+    grid-area: textbottom;
+    align-self: end;
+}
+
+.projecting-text-bottom p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.projecting-text-bottom p strong {
+    color: #0F62FE;
+    font-weight: 600;
+}
+
+.projecting-phones-wrapper-bottom {
+    grid-area: phonesbottom;
+    align-self: end;
+}
+.projecting-phones-bottom {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.projecting-phones-bottom img {
+    flex: 0 1 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projecting-phones-bottom img:nth-child(1) { width: 232px; }
+.projecting-phones-bottom img:nth-child(2) { width: 228px; }
 
 @media (max-width: 1200px) {
     /* Tablet 2-column layout */
