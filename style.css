@@ -1212,19 +1212,17 @@ body {
 
 @media (max-width: 1024px) {
     .lowering-block {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 40px;
     }
     
     .lowering-column {
-        display: contents;
+        gap: 40px;
     }
     
-    .woman-img { order: 1; margin: 0 auto; margin-bottom: 0; }
-    .lowering-text-top { order: 2; margin-bottom: 0; }
-    .lowering-text-bottom { order: 3; margin-bottom: 0; }
-    .lowering-phones { order: 4; }
+    .woman-img { margin: 0 auto; margin-bottom: 0; }
+    .lowering-text-top { margin-bottom: 0; }
+    .lowering-text-bottom { margin-bottom: 0; }
 
     .lowering-phones {
         width: 100vw;
@@ -1269,3 +1267,10 @@ body {
 .lowering-phones img:nth-child(1) { flex: 279; }
 .lowering-phones img:nth-child(2) { flex: 325; }
 .lowering-phones img:nth-child(3) { flex: 303; }
+
+/* Foolproof Responsive Display Classes */
+.mobile-only { display: none !important; }
+@media (max-width: 1024px) {
+    .desktop-only { display: none !important; }
+    .mobile-only { display: block !important; }
+}
