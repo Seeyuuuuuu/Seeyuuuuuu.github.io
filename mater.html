@@ -314,9 +314,9 @@
                                 const container = progress.previousElementSibling;
                                 if (container) {
                                     if (container.scrollWidth <= container.clientWidth + 5) {
-                                        progress.classList.add('hide-dots-force');
+                                        progress.style.setProperty('display', 'none', 'important');
                                     } else {
-                                        progress.classList.remove('hide-dots-force');
+                                        progress.style.removeProperty('display');
                                     }
                                 }
                             });
