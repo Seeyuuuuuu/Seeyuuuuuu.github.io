@@ -1152,7 +1152,8 @@ body {
 }
 
 .woman-img {
-    width: 100%;
+    width: 85%;
+    max-width: 400px;
     height: auto;
     display: block;
     margin-bottom: 40px;
@@ -1243,3 +1244,8 @@ body {
         scroll-snap-align: center;
     }
 }
+
+/* Custom flex scaling to equalize phone body sizes */
+.lowering-phones img:nth-child(1) { flex: 279; }
+.lowering-phones img:nth-child(2) { flex: 325; }
+.lowering-phones img:nth-child(3) { flex: 303; }
