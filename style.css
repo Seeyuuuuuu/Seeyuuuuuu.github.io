@@ -1190,7 +1190,7 @@ body {
 .lowering-phones {
     display: flex;
     gap: 16px;
-    align-items: flex-end;
+    align-items: center;
     min-width: 0;
 }
 
