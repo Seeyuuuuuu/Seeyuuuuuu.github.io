@@ -16,6 +16,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: var(--font-family);
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -1268,6 +1269,7 @@ body {
     .projecting-main-img {
         width: 100% !important;
         max-width: none !important;
+        transform: scale(1.2);
     }
 
     .projecting-phones-top img, .projecting-phones-bottom img {
@@ -1275,6 +1277,7 @@ body {
         width: 100% !important;
         max-width: none !important;
         scroll-snap-align: start;
+        transform: scale(1.15);
     }
     
     .projecting-block div.carousel-dots-container.mobile-only {
