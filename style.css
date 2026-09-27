@@ -1188,6 +1188,7 @@ body {
 
 .projecting-main-img {
     width: 100%;
+    min-width: 0;
     max-width: 100%;
     height: auto;
     display: block;
@@ -1219,17 +1220,18 @@ body {
     display: flex;
     gap: 24px;
     justify-content: center;
+    width: 100%;
+    min-width: 0;
 }
 
 .projecting-phones-top img {
-    flex: 0 1 auto;
-    max-width: 100%;
+    min-width: 0;
     height: auto;
     display: block;
 }
 
-.projecting-phones-top img:nth-child(1) { width: 230px; }
-.projecting-phones-top img:nth-child(2) { width: 236px; }
+.projecting-phones-top img:nth-child(1) { flex: 230; }
+.projecting-phones-top img:nth-child(2) { flex: 236; }
 
 .projecting-text-bottom {
     grid-area: textbottom;
@@ -1255,17 +1257,18 @@ body {
     display: flex;
     gap: 24px;
     justify-content: center;
+    width: 100%;
+    min-width: 0;
 }
 
 .projecting-phones-bottom img {
-    flex: 0 1 auto;
-    max-width: 100%;
+    min-width: 0;
     height: auto;
     display: block;
 }
 
-.projecting-phones-bottom img:nth-child(1) { width: 232px; }
-.projecting-phones-bottom img:nth-child(2) { width: 228px; }
+.projecting-phones-bottom img:nth-child(1) { flex: 232; }
+.projecting-phones-bottom img:nth-child(2) { flex: 228; }
 
 @media (max-width: 1200px) {
     /* Tablet 2-column layout */
