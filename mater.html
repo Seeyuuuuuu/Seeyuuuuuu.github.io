@@ -274,6 +274,29 @@
                     <img src="assets/Project-01/Lowering the Barrier to Action-3.svg" alt="Phone 2">
                     <img src="assets/Project-01/Lowering the Barrier to Action-4.svg" alt="Phone 3">
                 </div>
+                
+                <div class="carousel-progress mobile-only">
+                    <div class="carousel-track">
+                        <div class="carousel-thumb"></div>
+                    </div>
+                </div>
+                
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const phoneCarousel = document.querySelector('.lowering-phones');
+                        const carouselThumb = document.querySelector('.carousel-thumb');
+                        
+                        if (phoneCarousel && carouselThumb) {
+                            phoneCarousel.addEventListener('scroll', () => {
+                                const maxScroll = phoneCarousel.scrollWidth - phoneCarousel.clientWidth;
+                                if (maxScroll > 0) {
+                                    const scrollPercentage = phoneCarousel.scrollLeft / maxScroll;
+                                    carouselThumb.style.transform = `translateX(${scrollPercentage * 200}%)`;
+                                }
+                            });
+                        }
+                    });
+                </script>
             </div>
         </section>
 
