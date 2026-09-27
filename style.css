@@ -1350,21 +1350,30 @@ div.carousel-dots-container.mobile-only {
 
 /* Empowering through Knowledge block */
 .empowering-block {
-    align-items: center;
+    align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+}
+
+.empowering-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
 .empowering-bg-container {
     position: relative;
     overflow: hidden;
     width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .empowering-bg {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
@@ -1462,6 +1471,9 @@ div.carousel-dots-container.mobile-only {
         display: flex;
         flex-direction: column;
     }
+    .empowering-bg {
+        height: auto;
+    }
     .empowering-text-overlay {
         position: static;
         padding: 24px 0 0 0;
@@ -1486,6 +1498,7 @@ div.carousel-dots-container.mobile-only {
         -webkit-overflow-scrolling: touch;
         padding: 20px 0 16px;
         gap: 20px;
+        justify-content: flex-start;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
