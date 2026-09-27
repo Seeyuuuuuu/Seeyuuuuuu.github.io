@@ -1221,7 +1221,7 @@ body {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px 0 40px;
+        padding: 20px 0 16px;
         gap: 20px;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -1281,7 +1281,7 @@ body {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px 0 40px;
+        padding: 20px 0 16px;
         gap: 24px;
         -ms-overflow-style: none;
         scrollbar-width: none;
