@@ -1516,6 +1516,6 @@ div.carousel-dots-container.mobile-only {
 }
 
 /* Force hide dots when content fits without scrolling */
-.hide-dots-force {
+div.carousel-dots-container.mobile-only.hide-dots-force {
     display: none !important;
 }
