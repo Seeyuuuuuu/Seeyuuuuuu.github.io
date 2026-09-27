@@ -280,29 +280,26 @@
                 
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
-                        // Initialize all custom carousels dynamically
-                        const carousels = [
-                            { container: document.querySelector('.after-phones'), progress: document.querySelectorAll('.carousel-dots-container')[0] },
-                            { container: document.querySelector('.lowering-phones'), progress: document.querySelectorAll('.carousel-dots-container')[1] }
-                        ];
+                        const dotContainers = document.querySelectorAll('.carousel-dots-container');
                         
-                        carousels.forEach(group => {
-                            if (group.container && group.progress) {
-                                const itemsCount = group.container.querySelectorAll('img').length;
+                        dotContainers.forEach(progress => {
+                            const container = progress.previousElementSibling;
+                            if (container) {
+                                const itemsCount = container.querySelectorAll('img').length;
+                                if (itemsCount <= 1) return;
                                 
-                                // Generate dots
-                                group.progress.innerHTML = '';
+                                progress.innerHTML = '';
                                 for (let i = 0; i < itemsCount; i++) {
                                     const dot = document.createElement('div');
                                     dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-                                    group.progress.appendChild(dot);
+                                    progress.appendChild(dot);
                                 }
                                 
-                                group.container.addEventListener('scroll', () => {
-                                    const dots = group.progress.querySelectorAll('.carousel-dot');
-                                    const maxScroll = group.container.scrollWidth - group.container.clientWidth;
+                                container.addEventListener('scroll', () => {
+                                    const dots = progress.querySelectorAll('.carousel-dot');
+                                    const maxScroll = container.scrollWidth - container.clientWidth;
                                     if (maxScroll > 0) {
-                                        const scrollPercentage = group.container.scrollLeft / maxScroll;
+                                        const scrollPercentage = container.scrollLeft / maxScroll;
                                         const activeIndex = Math.min(itemsCount - 1, Math.max(0, Math.round(scrollPercentage * (itemsCount - 1))));
                                         dots.forEach((dot, index) => {
                                             dot.classList.toggle('active', index === activeIndex);
@@ -313,6 +310,32 @@
                         });
                     });
                 </script>
+            </div>
+        </section>
+
+        <!-- Empowering through Knowledge (Responsive Block) -->
+        <section class="responsive-block empowering-block" style="margin-bottom: 160px;">
+            <div class="empowering-column empowering-left">
+                <div class="empowering-bg-container">
+                    <img src="assets/Project-01/Empowering through Knowledge-1.svg" class="empowering-bg" alt="Person holding phone">
+                    <div class="empowering-text-overlay">
+                        <h2>Empowering through Knowledge</h2>
+                        <p>To actively close the discovered knowledge gaps, I designed the "Insights" hub, a central space offering curated content broken down into digestible "Daily" bites and thematic collections. Visual progress indicators ensure high motivation while keeping navigation through complex topics intuitive and simple.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="empowering-column empowering-right">
+                <div class="empowering-text-top">
+                    <p>A key innovation is the <strong>adaptive language toggle</strong>, allowing users to switch seamlessly between everyday language and professional terminology. By translating complex facts into narrative storytelling, the system minimizes cognitive load, giving users full control over their learning pace and building long-term financial agency.</p>
+                </div>
+                
+                <div class="empowering-phones">
+                    <img src="assets/Project-01/Empowering through Knowledge-2.svg" alt="Everyday Language Screen">
+                    <img src="assets/Project-01/Empowering through Knowledge-3.svg" alt="Professional Terminology Screen">
+                </div>
+                
+                <div class="carousel-dots-container mobile-only"></div>
             </div>
         </section>
 
