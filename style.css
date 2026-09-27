@@ -1349,6 +1349,7 @@ body {
 
 
 
+.visual-foundation-image img, 
 .lowering-phones img, 
 .empowering-phones img, 
 .projecting-main-img, 
@@ -1366,6 +1367,7 @@ body {
     backface-visibility: hidden;
 }
 
+.visual-foundation-image img:hover, 
 .empowering-bg:hover, 
 .woman-img:hover, 
 .lowering-phones img:hover, 
@@ -1798,6 +1800,7 @@ body {
 
     
 
+.visual-foundation-image img:hover, 
 .empowering-bg:hover, 
 .woman-img:hover, 
 .lowering-phones img:hover, 
