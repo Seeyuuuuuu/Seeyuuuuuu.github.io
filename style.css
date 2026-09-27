@@ -1246,6 +1246,20 @@ body {
     .projecting-text-top, .projecting-text-bottom {
         align-self: start;
     }
+    
+    .projecting-phones-top {
+        justify-content: flex-start;
+    }
+    
+    .projecting-phones-bottom {
+        justify-content: flex-start;
+    }
+
+    .projecting-phones-top img, .projecting-phones-bottom img {
+        flex: 0 1 290px !important;
+        width: 290px !important;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
