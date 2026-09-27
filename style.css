@@ -573,16 +573,114 @@ body {
     margin: 0 auto;
 }
 
+/* Responsive Project Content Block (HTML replacing images) */
+.responsive-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0 200px;
+    margin-bottom: 120px;
+    color: #000;
+}
+
+.content-left h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.content-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.qr-code-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.qr-code-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.qr-code-box p {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gap-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.structural-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.psychological-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.info-item img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.info-item span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footnote {
+    font-size: 11px;
+    color: #999;
+    text-align: right;
+    margin-top: 20px;
+}
+
 /* Project Details Responsive */
 @media (max-width: 1024px) {
-    .project-info, .project-video-container, .project-gallery, .related-projects {
+    .project-info, .project-video-container, .project-gallery, .related-projects, .responsive-block {
         padding-left: 120px;
         padding-right: 120px;
+    }
+    
+    .responsive-block {
+        grid-template-columns: 1fr;
+        gap: 60px;
     }
 }
 
 @media (max-width: 768px) {
-    .project-info, .project-video-container, .related-projects {
+    .project-info, .project-video-container, .related-projects, .responsive-block {
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -597,6 +695,18 @@ body {
     .meta-item {
         grid-template-columns: 1fr;
         gap: 4px;
+    }
+    .structural-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .psychological-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        gap: 24px;
+    }
+    .footnote {
+        text-align: left;
     }
 }
 
