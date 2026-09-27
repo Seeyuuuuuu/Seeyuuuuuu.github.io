@@ -1183,13 +1183,13 @@ body {
 .projecting-main {
     grid-area: main;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .projecting-main-img {
     width: 100%;
     min-width: 0;
-    max-width: 100%;
+    max-width: 471px;
     height: auto;
     display: block;
 }
