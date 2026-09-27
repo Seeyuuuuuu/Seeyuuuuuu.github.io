@@ -981,3 +981,46 @@ body {
     color: #0F62FE;
     font-weight: 600;
 }
+
+/* Process & Iteration block */
+.process-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.process-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.1;
+    object-fit: contain;
+    object-position: bottom;
+    display: block;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1);
+}
+
+.process-item:hover img {
+    transform: translateY(-8px) scale(1.05);
+}
+
+.process-item h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.process-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+.process-item p strong {
+    color: #0F62FE;
+    font-weight: 600;
+}
