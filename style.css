@@ -717,8 +717,8 @@ body {
 
 @media (max-width: 768px) {
     .project-info, .project-video-container, .related-projects, .responsive-block {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     .project-gallery {
         padding-left: 0;
@@ -1294,3 +1294,10 @@ body {
 }
 
 
+
+@media (max-width: 480px) {
+    .project-info, .project-video-container, .related-projects, .responsive-block {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
