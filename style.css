@@ -597,6 +597,7 @@ body {
 
 .content-left p strong {
     color: #0F62FE;
+    font-weight: 500;
 }
 
 .qr-code-box {
@@ -671,6 +672,17 @@ body {
     color: #999;
     text-align: right;
     margin-top: 20px;
+}
+
+.footnote a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footnote a:hover {
+    color: #666;
+    text-decoration: underline;
 }
 
 /* Project Details Responsive */
