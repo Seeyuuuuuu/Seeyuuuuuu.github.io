@@ -664,6 +664,9 @@ body {
     gap: 20px;
     height: 100%;
     transition: transform 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1);
 }
 
 .info-item:hover {
@@ -923,6 +926,9 @@ body {
     height: auto;
     transition: transform 0.3s ease;
     z-index: 2;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1);
 }
 
 .sticky:hover {
