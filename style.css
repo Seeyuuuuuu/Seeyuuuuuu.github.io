@@ -595,6 +595,10 @@ body {
     margin-bottom: 16px;
 }
 
+.content-left p strong {
+    color: #0F62FE;
+}
+
 .qr-code-box {
     display: flex;
     align-items: center;
@@ -646,17 +650,20 @@ body {
     align-items: center;
     text-align: center;
     gap: 12px;
+    height: 100%;
 }
 
 .info-item img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .info-item span {
     font-size: 12px;
     font-weight: 500;
+    margin-top: auto;
 }
 
 .footnote {
