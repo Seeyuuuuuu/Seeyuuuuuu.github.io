@@ -1171,6 +1171,15 @@ body {
         "main textbottom phonesbottom";
 }
 
+
+.projecting-main,
+.projecting-phones-wrapper-top,
+.projecting-phones-wrapper-bottom,
+.projecting-text-top,
+.projecting-text-bottom {
+    min-width: 0;
+}
+
 .projecting-main {
     grid-area: main;
     display: flex;
@@ -1178,7 +1187,7 @@ body {
 }
 
 .projecting-main-img {
-    width: 471px;
+    width: 420px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -1219,8 +1228,8 @@ body {
     display: block;
 }
 
-.projecting-phones-top img:nth-child(1) { width: 230px; }
-.projecting-phones-top img:nth-child(2) { width: 236px; }
+.projecting-phones-top img:nth-child(1) { width: 200px; }
+.projecting-phones-top img:nth-child(2) { width: 205px; }
 
 .projecting-text-bottom {
     grid-area: textbottom;
@@ -1255,8 +1264,8 @@ body {
     display: block;
 }
 
-.projecting-phones-bottom img:nth-child(1) { width: 232px; }
-.projecting-phones-bottom img:nth-child(2) { width: 228px; }
+.projecting-phones-bottom img:nth-child(1) { width: 202px; }
+.projecting-phones-bottom img:nth-child(2) { width: 198px; }
 
 @media (max-width: 1200px) {
     /* Tablet 2-column layout */
