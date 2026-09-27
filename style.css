@@ -1138,3 +1138,110 @@ body {
         scroll-snap-align: center;
     }
 }
+
+/* Lowering the Barrier block */
+.lowering-block {
+    align-items: stretch;
+}
+
+.lowering-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.woman-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1);
+}
+
+.woman-img:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.lowering-text-top {
+    margin-bottom: 40px;
+}
+
+.lowering-text-top h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.lowering-text-top p, .lowering-text-bottom p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+.lowering-text-top p strong, .lowering-text-bottom p strong {
+    color: #0F62FE;
+    font-weight: 600;
+}
+
+.lowering-phones {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.lowering-phones img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1);
+}
+
+.lowering-phones img:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .lowering-column {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    
+    .lowering-block {
+        gap: 40px;
+    }
+    
+    .lowering-phones {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px calc(50vw - 140px); /* Assuming phones will be ~280px wide on mobile */
+        gap: 20px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .lowering-phones::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .lowering-phones img {
+        flex: 0 0 auto;
+        width: 280px;
+        max-width: none;
+        scroll-snap-align: center;
+    }
+}
