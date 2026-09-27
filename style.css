@@ -380,8 +380,8 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-            "texttop"
             "main"
+            "texttop"
             "phonestop"
             "textbottom"
             "phonesbottom";
@@ -1200,8 +1200,8 @@ body {
 }
 
 .projecting-text-top h2 {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 24px;
 }
