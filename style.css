@@ -1118,7 +1118,7 @@ body {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px calc(50vw - 145px) 40px;
+        padding: 20px 120px 40px;
         gap: 24px;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -1133,7 +1133,7 @@ body {
         width: 290px;
         height: auto;
         max-width: none;
-        scroll-snap-align: center;
+        scroll-snap-align: start;
     }
 }
 
@@ -1232,7 +1232,7 @@ body {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px calc(50vw - 140px) 40px;
+        padding: 20px 120px 40px;
         gap: 20px;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -1271,7 +1271,7 @@ body {
     .lowering-phones img {
         flex: 0 0 auto;
         max-width: none;
-        scroll-snap-align: center;
+        scroll-snap-align: start;
     }
     
     .lowering-phones img:nth-child(1) { width: 280px; }
@@ -1299,5 +1299,19 @@ body {
     .project-info, .project-video-container, .related-projects, .responsive-block {
         padding-left: 24px;
         padding-right: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .after-phones, .lowering-phones {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .after-phones, .lowering-phones {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
     }
 }
