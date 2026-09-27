@@ -1348,6 +1348,24 @@ body {
 
 
 
+
+.lowering-phones img, 
+.empowering-phones img, 
+.projecting-main-img, 
+.conversion-img-wrapper img,
+.empowering-bg, 
+.woman-img,
+.refining-before img, 
+.after-phones img, 
+.ecosystem-phones img,
+.projecting-phones-top img, 
+.projecting-phones-bottom img,
+.lessons-mascot img {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 .empowering-bg:hover, 
 .woman-img:hover, 
 .lowering-phones img:hover, 
