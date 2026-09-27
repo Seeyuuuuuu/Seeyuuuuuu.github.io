@@ -240,11 +240,7 @@
                     <img src="assets/Project-01/Refining for Transparency-2.svg" alt="After Screen 1">
                     <img src="assets/Project-01/Refining for Transparency-3.svg" alt="After Screen 2">
                 </div>
-                <div class="carousel-progress mobile-only">
-                    <div class="carousel-track">
-                        <div class="carousel-thumb"></div>
-                    </div>
-                </div>
+                <div class="carousel-dots-container mobile-only"></div>
             </div>
         </section>
 
@@ -280,35 +276,37 @@
                     <img src="assets/Project-01/Lowering the Barrier to Action-4.svg" alt="Phone 3">
                 </div>
                 
-                <div class="carousel-progress mobile-only">
-                    <div class="carousel-track">
-                        <div class="carousel-thumb"></div>
-                    </div>
-                </div>
+                <div class="carousel-dots-container mobile-only"></div>
                 
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
                         // Initialize all custom carousels dynamically
                         const carousels = [
-                            { container: document.querySelector('.after-phones'), progress: document.querySelectorAll('.carousel-progress')[0] },
-                            { container: document.querySelector('.lowering-phones'), progress: document.querySelectorAll('.carousel-progress')[1] }
+                            { container: document.querySelector('.after-phones'), progress: document.querySelectorAll('.carousel-dots-container')[0] },
+                            { container: document.querySelector('.lowering-phones'), progress: document.querySelectorAll('.carousel-dots-container')[1] }
                         ];
                         
                         carousels.forEach(group => {
                             if (group.container && group.progress) {
-                                const thumb = group.progress.querySelector('.carousel-thumb');
                                 const itemsCount = group.container.querySelectorAll('img').length;
                                 
-                                // Auto-calculate thumb width (e.g. 2 items = 50%, 3 items = 33.33%)
-                                thumb.style.width = (100 / itemsCount) + '%';
+                                // Generate dots
+                                group.progress.innerHTML = '';
+                                for (let i = 0; i < itemsCount; i++) {
+                                    const dot = document.createElement('div');
+                                    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                                    group.progress.appendChild(dot);
+                                }
                                 
                                 group.container.addEventListener('scroll', () => {
+                                    const dots = group.progress.querySelectorAll('.carousel-dot');
                                     const maxScroll = group.container.scrollWidth - group.container.clientWidth;
                                     if (maxScroll > 0) {
                                         const scrollPercentage = group.container.scrollLeft / maxScroll;
-                                        // The max translation is (itemsCount - 1) * 100%
-                                        const maxTranslate = (itemsCount - 1) * 100;
-                                        thumb.style.transform = `translateX(${scrollPercentage * maxTranslate}%)`;
+                                        const activeIndex = Math.min(itemsCount - 1, Math.max(0, Math.round(scrollPercentage * (itemsCount - 1))));
+                                        dots.forEach((dot, index) => {
+                                            dot.classList.toggle('active', index === activeIndex);
+                                        });
                                     }
                                 });
                             }

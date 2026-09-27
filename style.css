@@ -1234,30 +1234,28 @@ body {
         display: none;
     }
     
-    .carousel-progress {
-        display: block !important;
-        width: 100%;
-        margin-top: -16px;
-        margin-bottom: 40px;
+    .carousel-dots-container {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        background: rgba(15, 98, 254, 0.1);
+        padding: 6px 12px;
+        border-radius: 99px;
+        width: max-content;
+        margin: 0 auto 40px auto;
     }
     
-    .carousel-track {
-        width: 100%;
+    .carousel-dot {
+        width: 6px;
         height: 6px;
-        background: rgba(15, 98, 254, 0.15);
-        border-radius: 99px;
-        position: relative;
+        border-radius: 50%;
+        background: rgba(15, 98, 254, 0.3);
+        transition: background 0.3s ease;
     }
     
-    .carousel-thumb {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 33.33%;
+    .carousel-dot.active {
         background: #0F62FE;
-        border-radius: 99px;
-        transition: transform 0.1s ease-out;
     }
     
     .lowering-phones img {
@@ -1349,7 +1347,7 @@ body {
 }
 
 @media (min-width: 769px) {
-    .refining-after .carousel-progress {
+    .refining-after .carousel-dots-container {
         display: none !important;
     }
 }
