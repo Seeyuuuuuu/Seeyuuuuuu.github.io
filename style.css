@@ -1247,18 +1247,22 @@ body {
         align-self: start;
     }
     
+    .projecting-main {
+        justify-content: center;
+    }
+    
     .projecting-phones-top {
-        justify-content: flex-start;
+        justify-content: center;
     }
     
     .projecting-phones-bottom {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .projecting-main-img {
         width: 290px !important;
-        transform: scale(1.2);
-        transform-origin: left center;
+        transform: scale(1.1);
+        transform-origin: center center;
     }
 
     .projecting-phones-top img, .projecting-phones-bottom img {
@@ -1289,7 +1293,7 @@ body {
     .projecting-main-img {
         width: 100% !important;
         max-width: none !important;
-        transform: scale(1.2);
+        transform: scale(1.1);
         transform-origin: center center;
     }
 
