@@ -1231,32 +1231,6 @@ body {
         display: none;
     }
     
-    .carousel-dots-container {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        background: rgba(15, 98, 254, 0.1);
-        padding: 6px 12px;
-        border-radius: 99px;
-        width: max-content;
-        margin: 0 auto 40px auto;
-    }
-    
-    .carousel-dot {
-        width: 6px;
-        height: 6px;
-        flex-shrink: 0;
-        border-radius: 50%;
-        background: rgba(15, 98, 254, 0.3);
-        transition: background 0.3s ease;
-    }
-    
-    .carousel-dot.active {
-        background: #0F62FE;
-    }
     
     .lowering-phones img {
         flex: 0 0 auto;
@@ -1326,4 +1300,32 @@ body {
     .refining-after .carousel-dots-container {
         display: none !important;
     }
+}
+
+/* Global Dots CSS */
+div.carousel-dots-container.mobile-only {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background: rgba(15, 98, 254, 0.1);
+    padding: 6px 12px;
+    border-radius: 99px;
+    width: max-content;
+    margin: 0 auto 40px auto;
+}
+
+.carousel-dot {
+    width: 6px;
+    height: 6px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(15, 98, 254, 0.3);
+    transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: #0F62FE;
 }
