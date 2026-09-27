@@ -1420,19 +1420,28 @@ div.carousel-dots-container.mobile-only {
     display: flex;
     gap: 24px;
     align-items: center;
+    justify-content: center;
     min-width: 0;
 }
 
 .empowering-phones img {
-    flex: 1;
+    flex: 0 0 auto;
     min-width: 0;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: translateZ(0) scale(1);
+}
+
+.empowering-phones img:nth-child(1) {
+    width: 290px;
+}
+
+.empowering-phones img:nth-child(2) {
+    width: 307px;
 }
 
 @media (max-width: 1200px) {
@@ -1449,11 +1458,25 @@ div.carousel-dots-container.mobile-only {
 }
 
 @media (max-width: 768px) {
+    .empowering-bg-container {
+        display: flex;
+        flex-direction: column;
+    }
     .empowering-text-overlay {
-        padding: 24px;
+        position: static;
+        padding: 24px 0 0 0;
+        background: none;
     }
     .empowering-text-overlay h2 {
         font-size: 22px;
+        color: #1a1a1a;
+    }
+    .empowering-text-overlay p {
+        color: #222;
+    }
+    
+    .empowering-text-top {
+        margin-bottom: 32px;
     }
     
     .empowering-phones {
