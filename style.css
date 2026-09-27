@@ -1087,13 +1087,17 @@ body {
 }
 
 .refining-before img, .after-phones img {
-    height: 420px;
-    width: auto;
+    width: 290px;
+    height: auto;
     display: block;
     transition: transform 0.3s ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: translateZ(0) scale(1);
+}
+
+.after-phones img:nth-child(2) {
+    width: 282px;
 }
 
 
@@ -1108,12 +1112,7 @@ body {
         grid-column: 1 / -1;
     }
     
-    .refining-before img {
-        height: auto;
-        width: 100%;
-        max-width: 290px;
-        margin: 0 auto;
-    }
+
 
 
 }
@@ -1332,9 +1331,6 @@ body {
     }
     .after-phones img {
         flex: 0 0 auto;
-        width: 290px;
-        height: auto;
-        max-width: none;
         scroll-snap-align: start;
     }
 }
