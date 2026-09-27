@@ -425,6 +425,9 @@ body {
     max-width: 331px;
     height: auto;
     display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .ecosystem-phones-wrapper {
@@ -1232,6 +1235,18 @@ body {
 }
 
 
+
+.empowering-bg:hover, 
+.woman-img:hover, 
+.lowering-phones img:hover, 
+.empowering-phones img:hover, 
+.projecting-main-img:hover, 
+.conversion-img-wrapper img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
 .refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
     transform: translateY(-8px) scale(1.05);
     position: relative;
@@ -1306,6 +1321,9 @@ body {
     max-width: 471px;
     height: auto;
     display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .projecting-text-top {
@@ -1345,7 +1363,7 @@ body {
 }
 
 .projecting-phones-top img:hover, .projecting-phones-bottom img:hover {
-    transform: translateY(-8px) scale(1.08);
+    transform: translateY(-8px) scale(1.15);
     position: relative;
     z-index: 10;
 }
@@ -1649,6 +1667,18 @@ body {
     }
 
     
+
+.empowering-bg:hover, 
+.woman-img:hover, 
+.lowering-phones img:hover, 
+.empowering-phones img:hover, 
+.projecting-main-img:hover, 
+.conversion-img-wrapper img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
 .refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
     transform: translateY(-8px) scale(1.05);
     position: relative;
