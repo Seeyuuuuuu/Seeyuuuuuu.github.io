@@ -1217,14 +1217,11 @@ body {
     .lowering-text-bottom { margin-bottom: 0; }
 
     .lowering-phones {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px 120px 40px;
+        padding: 20px 0 40px;
         gap: 20px;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -1236,6 +1233,8 @@ body {
     
     .carousel-dots-container {
         display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         justify-content: center;
         align-items: center;
         gap: 6px;
@@ -1249,6 +1248,7 @@ body {
     .carousel-dot {
         width: 6px;
         height: 6px;
+        flex-shrink: 0;
         border-radius: 50%;
         background: rgba(15, 98, 254, 0.3);
         transition: background 0.3s ease;
@@ -1293,27 +1293,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .after-phones, .lowering-phones {
-        padding-left: 80px !important;
-        padding-right: 80px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .after-phones, .lowering-phones {
-        padding-left: 24px !important;
-        padding-right: 24px !important;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-    .after-phones {
-        padding-left: 200px !important;
-        padding-right: 200px !important;
-    }
-}
-
-@media (max-width: 768px) {
     /* Collapse to 1 column for mobile */
     .refining-block {
         grid-template-areas:
@@ -1324,14 +1303,11 @@ body {
     }
 
     .after-phones {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px 80px 40px;
+        padding: 20px 0 40px;
         gap: 24px;
         -ms-overflow-style: none;
         scrollbar-width: none;
