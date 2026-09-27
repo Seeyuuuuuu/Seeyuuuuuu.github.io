@@ -1036,7 +1036,7 @@ body {
 .refining-before, .refining-after {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
 }
 
@@ -1073,6 +1073,7 @@ body {
 .after-phones {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .refining-label {
@@ -1111,34 +1112,10 @@ body {
         height: auto;
         width: 100%;
         max-width: 290px;
-        margin: 0;
+        margin: 0 auto;
     }
 
-    .after-phones {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: 20px 120px 40px;
-        gap: 24px;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-    
-    .after-phones::-webkit-scrollbar {
-        display: none;
-    }
 
-    .after-phones img {
-        flex: 0 0 auto;
-        width: 290px;
-        height: auto;
-        max-width: none;
-        scroll-snap-align: start;
-    }
 }
 
 /* Lowering the Barrier block */
@@ -1334,5 +1311,36 @@ body {
     }
     .refining-after {
         grid-column: auto !important;
+    }
+
+    .after-phones {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 80px 40px;
+        gap: 24px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        justify-content: flex-start;
+    }
+    .after-phones::-webkit-scrollbar {
+        display: none;
+    }
+    .after-phones img {
+        flex: 0 0 auto;
+        width: 290px;
+        height: auto;
+        max-width: none;
+        scroll-snap-align: start;
+    }
+}
+
+@media (min-width: 769px) {
+    .refining-after .carousel-progress {
+        display: none !important;
     }
 }
