@@ -1036,7 +1036,7 @@ body {
 .refining-before, .refining-after {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
 }
 
@@ -1107,7 +1107,7 @@ body {
         height: auto;
         width: 100%;
         max-width: 290px;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .after-phones {
