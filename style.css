@@ -443,6 +443,9 @@ body {
     min-width: 0;
     height: auto;
     display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .ecosystem-phones img:nth-child(1) { flex: 304; }
@@ -1228,6 +1231,13 @@ body {
     font-weight: 600;
 }
 
+
+.refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
 .after-phones {
     display: flex;
     gap: 24px;
@@ -1326,6 +1336,18 @@ body {
     justify-content: center;
     width: 100%;
     min-width: 0;
+}
+
+.projecting-phones-top img, .projecting-phones-bottom img {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.projecting-phones-top img:hover, .projecting-phones-bottom img:hover {
+    transform: translateY(-8px) scale(1.08);
+    position: relative;
+    z-index: 10;
 }
 
 .projecting-phones-top img {
@@ -1626,7 +1648,14 @@ body {
         grid-template-columns: 1fr !important;
     }
 
-    .after-phones {
+    
+.refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
+.after-phones {
         width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
