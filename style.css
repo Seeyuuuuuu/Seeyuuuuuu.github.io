@@ -1303,8 +1303,7 @@ body {
 }
 
 /* Global Dots CSS */
-div.carousel-dots-container.mobile-only {
-    display: flex !important;
+div.carousel-dots-container {
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     justify-content: center;
@@ -1315,6 +1314,24 @@ div.carousel-dots-container.mobile-only {
     border-radius: 99px;
     width: max-content;
     margin: 0 auto 40px auto;
+}
+
+/* Hide all dots by default */
+div.carousel-dots-container.mobile-only {
+    display: none !important;
+}
+
+/* Show dots ONLY when carousels are active */
+@media (max-width: 1024px) {
+    .lowering-block div.carousel-dots-container.mobile-only {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .refining-block div.carousel-dots-container.mobile-only {
+        display: flex !important;
+    }
 }
 
 .carousel-dot {
