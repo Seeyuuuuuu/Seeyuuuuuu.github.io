@@ -1266,12 +1266,12 @@ body {
     }
     
     .projecting-main-img {
-        width: 290px !important;
+        width: 240px !important;
     }
 
     .projecting-phones-top img, .projecting-phones-bottom img {
-        flex: 0 0 290px !important;
-        width: 290px !important;
+        flex: 0 0 240px !important;
+        width: 240px !important;
         max-width: 100%;
         scroll-snap-align: start;
     }
