@@ -974,6 +974,12 @@ body {
         padding-right: 120px;
     }
     
+
+    .project-overview {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
     .responsive-block {
         grid-template-columns: 1fr;
         gap: 60px;
