@@ -589,6 +589,13 @@ body {
 }
 
 .content-left {
+    height: 100%;
+}
+@media (min-width: 1025px) {
+    .content-left {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .content-left h2 {
@@ -614,6 +621,13 @@ body {
     align-items: center;
     gap: 16px;
     margin-top: 40px;
+}
+
+@media (min-width: 1025px) {
+    .qr-code-box {
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
 }
 
 .qr-code-box img {
