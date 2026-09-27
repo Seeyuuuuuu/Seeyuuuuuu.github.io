@@ -308,6 +308,23 @@
                                 });
                             }
                         });
+
+                        function updateDotsVisibility() {
+                            dotContainers.forEach(progress => {
+                                const container = progress.previousElementSibling;
+                                if (container) {
+                                    if (container.scrollWidth <= container.clientWidth + 5) {
+                                        progress.classList.add('hide-dots-force');
+                                    } else {
+                                        progress.classList.remove('hide-dots-force');
+                                    }
+                                }
+                            });
+                        }
+                        
+                        updateDotsVisibility();
+                        window.addEventListener('resize', updateDotsVisibility);
+                        window.addEventListener('load', updateDotsVisibility);
                     });
                 </script>
             </div>

@@ -1514,3 +1514,8 @@ div.carousel-dots-container.mobile-only {
         scroll-snap-align: start;
     }
 }
+
+/* Force hide dots when content fits without scrolling */
+.hide-dots-force {
+    display: none !important;
+}
