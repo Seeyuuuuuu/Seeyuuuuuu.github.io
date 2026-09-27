@@ -376,7 +376,103 @@ body {
 
 
 
+/* Conversion & Ecosystem block */
+.conversion-ecosystem-block {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+}
+
+.conversion-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ecosystem-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conversion-text h2, .ecosystem-text h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+}
+
+.conversion-text p, .ecosystem-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.conversion-text p strong, .ecosystem-text p strong {
+    color: #0F62FE;
+    font-weight: 600;
+}
+
+.conversion-img-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.conversion-img-wrapper img {
+    width: 100%;
+    max-width: 331px;
+    height: auto;
+    display: block;
+}
+
+.ecosystem-phones-wrapper {
+    margin-bottom: 60px;
+}
+
+.ecosystem-phones {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 0;
+}
+
+.ecosystem-phones img {
+    min-width: 0;
+    height: auto;
+    display: block;
+}
+
+.ecosystem-phones img:nth-child(1) { flex: 304; }
+.ecosystem-phones img:nth-child(2) { flex: 313; margin-top: 80px; }
+
 @media (max-width: 1024px) {
+    .conversion-ecosystem-block {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .conversion-img-wrapper {
+        margin-top: 40px;
+    }
+    
+    .ecosystem-phones-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .ecosystem-phones {
+        justify-content: center;
+    }
+    
+    .ecosystem-phones img {
+        flex: 0 1 290px !important;
+        width: 290px !important;
+        max-width: 100%;
+    }
+    
+
     .projecting-block {
     .gallery-container {
         padding: 180px 120px 48px;
@@ -399,6 +495,43 @@ body {
 }
 
 @media (max-width: 767px) {
+    .ecosystem-phones {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 0 16px;
+        gap: 20px;
+        justify-content: flex-start;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        align-items: center;
+    }
+    
+    .ecosystem-phones::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .ecosystem-phones img {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: none !important;
+        scroll-snap-align: start;
+    }
+
+    .ecosystem-phones img:nth-child(2) {
+        margin-top: 0;
+    }
+    
+    .conversion-img-wrapper img {
+        max-width: none;
+        width: 100%;
+    }
+    
+    .conversion-ecosystem-block div.carousel-dots-container.mobile-only {
+        display: flex !important;
+    }
+
 
     .header {
         padding: 0 24px;
