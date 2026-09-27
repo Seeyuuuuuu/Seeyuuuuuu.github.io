@@ -1265,8 +1265,13 @@ body {
         display: none;
     }
     
+    .projecting-main-img {
+        width: 290px !important;
+    }
+
     .projecting-phones-top img, .projecting-phones-bottom img {
-        flex: 0 0 auto;
+        flex: 0 0 290px !important;
+        width: 290px !important;
         max-width: 100%;
         scroll-snap-align: start;
     }
