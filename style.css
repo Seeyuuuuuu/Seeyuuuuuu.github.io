@@ -1241,26 +1241,30 @@ body {
     
     .lowering-phones::-webkit-scrollbar {
         display: block;
-        height: 4px;
+        height: 6px;
+        -webkit-appearance: none;
     }
     
     .lowering-phones::-webkit-scrollbar-track {
-        background: #f0f0f0;
-        border-radius: 4px;
-        margin: 0 calc(50vw - 40px);
+        background: rgba(15, 98, 254, 0.15);
+        border-radius: 99px;
+        margin: 0 120px;
     }
     
     .lowering-phones::-webkit-scrollbar-thumb {
         background: #0F62FE;
-        border-radius: 4px;
+        border-radius: 99px;
     }
     
     .lowering-phones img {
         flex: 0 0 auto;
-        width: 280px;
         max-width: none;
         scroll-snap-align: center;
     }
+    
+    .lowering-phones img:nth-child(1) { width: 280px; }
+    .lowering-phones img:nth-child(2) { width: 326px; }
+    .lowering-phones img:nth-child(3) { width: 304px; }
 }
 
 /* Custom flex scaling to equalize phone body sizes */
@@ -1275,4 +1279,10 @@ body {
 @media (max-width: 1024px) {
     .desktop-only { display: none !important; }
     .mobile-only { display: block !important; }
+}
+
+@media (max-width: 768px) {
+    .lowering-phones::-webkit-scrollbar-track {
+        margin: 0 24px;
+    }
 }
