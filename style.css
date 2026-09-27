@@ -663,6 +663,11 @@ body {
     text-align: center;
     gap: 20px;
     height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px) scale(1.05);
 }
 
 .info-item img {
