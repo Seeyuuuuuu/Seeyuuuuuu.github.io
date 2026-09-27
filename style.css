@@ -1098,9 +1098,13 @@ body {
 
 
 @media (max-width: 1200px) {
+    /* Tablet 2-column layout */
     .refining-block {
-        grid-template-columns: 1fr;
+        grid-template-columns: 280px 1fr;
         gap: 60px;
+    }
+    .refining-after {
+        grid-column: 1 / -1;
     }
     
     .refining-before img {
@@ -1320,5 +1324,15 @@ body {
     .after-phones {
         padding-left: 200px !important;
         padding-right: 200px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Collapse to 1 column for mobile */
+    .refining-block {
+        grid-template-columns: 1fr !important;
+    }
+    .refining-after {
+        grid-column: auto !important;
     }
 }
