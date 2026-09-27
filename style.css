@@ -1255,6 +1255,12 @@ body {
         justify-content: flex-start;
     }
 
+    .projecting-main-img {
+        width: 290px !important;
+        transform: scale(1.2);
+        transform-origin: left center;
+    }
+
     .projecting-phones-top img, .projecting-phones-bottom img {
         flex: 0 1 290px !important;
         width: 290px !important;
@@ -1284,6 +1290,7 @@ body {
         width: 100% !important;
         max-width: none !important;
         transform: scale(1.2);
+        transform-origin: center center;
     }
 
     .projecting-phones-top img, .projecting-phones-bottom img {
