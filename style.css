@@ -898,3 +898,39 @@ body {
     }
 }
 
+
+/* Collage Block Styles */
+.collage-container {
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.collage-base {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sticky {
+    position: absolute;
+    width: 18%;
+    height: auto;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.sticky:hover {
+    transform: translateY(-5px) scale(1.05);
+    z-index: 10;
+}
+
+.sticky-1 { top: -15%; left: 5%; }
+.sticky-2 { top: -20%; left: 35%; }
+.sticky-3 { top: -12%; right: 5%; }
+.sticky-4 { bottom: -15%; left: 18%; }
+.sticky-5 { bottom: -20%; left: 50%; }
+
+@media (max-width: 1024px) {
+    .collage-container { margin: 60px 0; }
+}
