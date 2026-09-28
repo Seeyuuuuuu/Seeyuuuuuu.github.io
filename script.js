@@ -133,3 +133,129 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Lightbox Gallery Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    
+    if (lightbox && lightboxImg) {
+        const allZoomableImages = Array.from(document.querySelectorAll('.zoomable-img, .trevo-blueprint-img, .synergy-img, .project-gallery img, .projecting-main-img, .conversion-img-wrapper img, .ecosystem-phones img, .empowering-bg, .woman-img, .visual-foundation-image img, .lowering-phones img'));
+        
+        let currentGroup = [];
+        let currentIndex = 0;
+        
+        const updateArrowVisibility = () => {
+            if (!prevBtn || !nextBtn) return;
+            if (currentGroup.length <= 1) {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+                return;
+            }
+            prevBtn.style.display = 'block';
+            nextBtn.style.display = 'block';
+            
+            if (currentIndex === 0) {
+                prevBtn.classList.add('disabled');
+            } else {
+                prevBtn.classList.remove('disabled');
+            }
+            
+            if (currentIndex === currentGroup.length - 1) {
+                nextBtn.classList.add('disabled');
+            } else {
+                nextBtn.classList.remove('disabled');
+            }
+        };
+
+        const updateLightboxImage = (index) => {
+            lightboxImg.style.opacity = 0.5;
+            setTimeout(() => {
+                const currentImg = currentGroup[index];
+                lightboxImg.src = currentImg.src;
+                if (currentImg.classList.contains('trevo-blueprint-img') || currentImg.classList.contains('needs-white-bg')) {
+                    lightboxImg.classList.add('lightbox-white-bg');
+                } else {
+                    lightboxImg.classList.remove('lightbox-white-bg');
+                }
+                lightboxImg.style.opacity = 1;
+            }, 150);
+        };
+
+        allZoomableImages.forEach((img) => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', () => {
+                const galleryName = img.getAttribute('data-gallery');
+                if (galleryName) {
+                    currentGroup = Array.from(document.querySelectorAll(`img[data-gallery="${galleryName}"]`));
+                } else {
+                    currentGroup = [img];
+                }
+                
+                currentIndex = currentGroup.indexOf(img);
+                
+                updateArrowVisibility();
+                
+                if (img.classList.contains('trevo-blueprint-img') || img.classList.contains('needs-white-bg')) {
+                    lightboxImg.classList.add('lightbox-white-bg');
+                } else {
+                    lightboxImg.classList.remove('lightbox-white-bg');
+                }
+                
+                lightbox.style.display = 'flex';
+                setTimeout(() => {
+                    lightbox.classList.add('show');
+                }, 10);
+                lightboxImg.src = currentGroup[currentIndex].src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        const closeLightbox = () => {
+            lightbox.classList.remove('show');
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+            }, 300);
+            document.body.style.overflow = 'auto';
+        };
+        
+        const showNext = (e) => {
+            if (e) e.stopPropagation();
+            if (currentGroup.length > 1 && currentIndex < currentGroup.length - 1) {
+                currentIndex++;
+                updateLightboxImage(currentIndex);
+                updateArrowVisibility();
+            }
+        };
+
+        const showPrev = (e) => {
+            if (e) e.stopPropagation();
+            if (currentGroup.length > 1 && currentIndex > 0) {
+                currentIndex--;
+                updateLightboxImage(currentIndex);
+                updateArrowVisibility();
+            }
+        };
+
+        if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+        if (nextBtn) nextBtn.addEventListener('click', showNext);
+        if (prevBtn) prevBtn.addEventListener('click', showPrev);
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('show')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight' && currentGroup.length > 1 && currentIndex < currentGroup.length - 1) showNext();
+                if (e.key === 'ArrowLeft' && currentGroup.length > 1 && currentIndex > 0) showPrev();
+            }
+        });
+    }
+});

@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
     <header class="header">
@@ -96,11 +96,59 @@
             </div>
         </section>
 
-        <!-- Image Gallery -->
-        <section class="project-gallery">
-            <img src="assets/Project-03/Project-03_02.jpg" alt="Trevo detail 2" loading="lazy">
-            <img src="assets/Project-03/Project-03_03.jpg" alt="Trevo detail 3" loading="lazy">
-            <img src="assets/Project-03/Project-03_04.jpg" alt="Trevo detail 4" loading="lazy">
+        <!-- Defining the Friction & Blueprint -->
+        <section class="responsive-block trevo-blueprint-block" style="margin-top: 120px; margin-bottom: 160px;">
+            <div class="content-left trevo-friction-text">
+                <h2>Defining the Friction</h2>
+                <p>SME transformation is often stifled by prohibitive consultancy fees and widespread <strong>"digital anxiety"</strong> among employees, compounded by a lack of transparent, visualized growth paths.</p>
+            </div>
+            
+            <div class="trevo-image-col">
+                <img src="assets/Project-03/Service-Blueprint.svg" alt="Service Blueprint" class="trevo-blueprint-img">
+            </div>
+
+            <div class="content-left trevo-transition-text">
+                <h2>Simplifying the Transition</h2>
+                <p>To provide an affordable and approachable alternative to traditional consulting, Trevo utilizes a <strong>hybrid ecosystem</strong>. By mapping digital maturity, it aligns managerial goals with self-led learning—providing a clear, low-pressure roadmap that empowers teams to benchmark progress without the usual uncertainty.</p>
+            </div>
+        </section>
+
+        <!-- Fostering a Dual-Driven Synergy -->
+        <section class="responsive-block trevo-synergy-block" style="margin-bottom: 160px;">
+            <div class="content-left full-width-text" style="grid-column: 1 / -1; margin-bottom: 20px;">
+                <h2>Fostering a Dual-Driven Synergy</h2>
+                <p style="max-width: 1000px;">Transformation stalls when corporate goals disconnect from individual needs. Trevo bridges this gap by fostering a synergy between <strong>strategic oversight and personal empowerment</strong>, leveraging AI-assisted guidance to help resource-constrained SMEs navigate complex changes at a sustainable, manageable pace.</p>
+            </div>
+            
+            <div class="synergy-col">
+                <img src="assets/Project-03/Fostering-a-Dual-Driven-Synergy-1.png?v=4" alt="Managerial Strategy" class="synergy-img" data-gallery="synergy">
+                <h4 class="synergy-subtitle">Managerial Strategy</h4>
+                <p class="synergy-desc">Managers orchestrate growth by assigning internal resources alongside system-generated recommendations, allowing small teams to maximize their training impact without relying on expensive external consultants.</p>
+            </div>
+            
+            <div class="synergy-col">
+                <img src="assets/Project-03/Fostering-a-Dual-Driven-Synergy-2.png?v=4" alt="Employee Autonomy" class="synergy-img" data-gallery="synergy">
+                <h4 class="synergy-subtitle">Employee Autonomy</h4>
+                <p class="synergy-desc">Employees drive their own advancement via an AI Assistant that acts as a supportive coach, providing tiered guidance to help resolve technical or operational challenges as they arise in their daily workflow.</p>
+            </div>
+        </section>
+
+
+        <!-- Crafting the Tangible Identity -->
+        <section class="responsive-block trevo-tangible-block" style="margin-bottom: 160px;">
+            <div class="tangible-image-col">
+                <img src="assets/Project-03/Crafting-the-Tangible-Identity-1.png?v=6" alt="Tangible Identity" class="tangible-img zoomable-img" data-gallery="tangible">
+            </div>
+            
+            <div class="content-left tangible-text-col">
+                <h2>Crafting the Tangible Identity</h2>
+                <p>To <strong>minimize resistance</strong> to external tools, I developed a physical identity that grounds Trevo within the workspace. Tangible touchpoints ease the digital transition, helping the workforce adopt new habits as a seamless part of their daily routine.</p>
+                
+                <div class="qr-code-block">
+                    <img src="assets/Project-03/Crafting-the-Tangible-Identity-2.svg" alt="QR Code" class="qr-img zoomable-img" data-gallery="tangible-qr">
+                    <p>Scan the code to explore the interaction flow from different user perspectives and see the project in action.</p>
+                </div>
+            </div>
         </section>
 
         <!-- You May Also Like -->
@@ -131,6 +179,16 @@
         </svg>
     </button>
 
+    
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
