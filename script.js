@@ -181,6 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     lightboxImg.classList.remove('lightbox-white-bg');
                 }
+                
+                if (currentImg.classList.contains('needs-flat-white-bg')) {
+                    lightboxImg.classList.add('lightbox-flat-white');
+                } else {
+                    lightboxImg.classList.remove('lightbox-flat-white');
+                }
                 lightboxImg.style.opacity = 1;
             }, 150);
         };
@@ -203,6 +209,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     lightboxImg.classList.add('lightbox-white-bg');
                 } else {
                     lightboxImg.classList.remove('lightbox-white-bg');
+                }
+                
+                if (img.classList.contains('needs-flat-white-bg')) {
+                    lightboxImg.classList.add('lightbox-flat-white');
+                } else {
+                    lightboxImg.classList.remove('lightbox-flat-white');
                 }
                 
                 lightbox.style.display = 'flex';

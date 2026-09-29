@@ -2365,3 +2365,312 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
         gap: 40px;
     }
 }
+
+/* Evolution - Trade Show PoC Block */
+.trade-show-block {
+    grid-template-columns: 11fr 9fr;
+    align-items: center;
+}
+
+.trade-show-left {
+    width: 100%;
+    min-width: 0;
+}
+
+.trade-show-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trade-show-right {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    min-width: 0;
+}
+
+.trade-show-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.trade-show-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+.trade-show-text p strong {
+    color: #96007E;
+    font-weight: 600;
+}
+
+.trade-show-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.trade-show-photos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .trade-show-block {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+/* Trade show PoC image hover interactions */
+.trade-show-left img, .trade-show-photos img {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.trade-show-left img:hover, .trade-show-photos img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
+/* Evolution - Fleet Operations Block */
+.fleet-block {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.fleet-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.fleet-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.fleet-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+.fleet-before-img {
+    width: 100%;
+}
+
+.fleet-before-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.fleet-bottom img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fleet-bottom img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .fleet-block {
+        gap: 24px;
+    }
+    .fleet-top {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .fleet-text {
+        display: contents;
+    }
+    .fleet-text h2 {
+        order: 1;
+        margin-bottom: 0;
+    }
+    .fleet-before-img {
+        order: 2;
+    }
+    .fleet-text p {
+        order: 3;
+    }
+}
+
+/* Fleet Annotations */
+.fleet-before-img {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
+.fleet-bottom-wrapper {
+    position: relative;
+    width: calc(100% + 160px);
+    margin-left: -80px;
+    margin-right: -80px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .fleet-bottom-wrapper {
+        width: calc(100% + 48px);
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-top: 32px;
+        margin-bottom: 0px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+    }
+    .fleet-bottom-wrapper::-webkit-scrollbar {
+        height: 3px;
+    }
+    .fleet-bottom-wrapper::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 0 24px;
+    }
+    .fleet-bottom-wrapper::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+    .fleet-bottom img {
+        width: 250%;
+        max-width: none;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+/* Evolution - SaaS Optimization Block */
+.saas-block {
+    display: grid;
+    grid-template-columns: 8fr 10fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.saas-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.saas-left h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.saas-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0 0 16px 0;
+}
+
+.saas-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.saas-list li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+}
+
+.saas-left strong {
+    color: #96007E;
+    font-weight: 600;
+}
+
+.saas-right {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.saas-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.saas-link {
+    font-size: 12px;
+    color: #888;
+    text-decoration: underline;
+    transition: color 0.2s;
+    align-self: flex-end;
+}
+
+.saas-link:hover {
+    color: #96007E;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .saas-block {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+.saas-right img {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.saas-right img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
+.lightbox-flat-white {
+    background-color: #ffffff !important;
+}

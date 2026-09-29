@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=24">
 </head>
 <body>
     <header class="header">
@@ -102,13 +102,62 @@
             </div>
         </section>
 
-        <!-- Image Gallery -->
-        <section class="project-gallery">
-            <img src="assets/Project-02/Project-02_02.jpg" alt="Evolution detail 2" loading="lazy">
-            <img src="assets/Project-02/Project-02_03.jpg" alt="Evolution detail 3" loading="lazy">
-            <img src="assets/Project-02/Project-02_04.jpg" alt="Evolution detail 4" loading="lazy">
-            <img src="assets/Project-02/Project-02_05.jpg" alt="Evolution detail 5" loading="lazy">
-            <img src="assets/Project-02/Project-02_06.jpg" alt="Evolution detail 6" loading="lazy">
+        
+
+        
+        <!-- Trade Show PoC Block -->
+        <section class="responsive-block trade-show-block">
+            <div class="trade-show-left">
+                <img src="assets/Project-02/trade-show-poc-1.png" alt="ETAS Trade Show Booth" class="zoomable-img" data-gallery="trade-show">
+            </div>
+            <div class="trade-show-right">
+                <div class="trade-show-text">
+                    <h2>Trade Show PoC: Visioning the Future of INCA</h2>
+                    <p>Partnered directly with the Business Manager to conceptualize and design a new real-time collaboration feature for the existing INCA software. The goal was to deliver a high-fidelity prototype and a marketing video to showcase our innovative capabilities and validate user interest live at the <strong>Automotive Testing Expo.</strong></p>
+                </div>
+                <div class="trade-show-photos">
+                    <img src="assets/Project-02/trade-show-poc-2.png" alt="Prototype Screen 1" class="zoomable-img" data-gallery="trade-show">
+                    <img src="assets/Project-02/trade-show-poc-3.png" alt="Prototype Screen 2" class="zoomable-img" data-gallery="trade-show">
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Fleet Operations Block -->
+        <section class="responsive-block fleet-block">
+            <div class="fleet-top">
+                <div class="fleet-text">
+                    <h2>Streamlining Fleet Operations</h2>
+                    <p>Redesigned the legacy fleet management platform to streamline remote test data transmission and improve the monitoring of vehicles and devices.</p>
+                </div>
+                <div class="fleet-before-img">
+                    <img src="assets/Project-02/streamlining-fleet-operations-1.png?v=2" alt="Before screens">
+                    
+                </div>
+            </div>
+            <div class="fleet-bottom">
+                <div class="fleet-bottom-wrapper">
+                    <img src="assets/Project-02/streamlining-fleet-operations-2.png?v=2" alt="Three monitors showing redesign" class="zoomable-img needs-white-bg" data-gallery="fleet">
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- SaaS Optimization Block -->
+        <section class="responsive-block saas-block">
+            <div class="saas-left">
+                <h2>Driving End-to-End SaaS Optimization</h2>
+                <p class="saas-subtitle">Driving the UX lifecycle from problem identification to technical release.</p>
+                <ul class="saas-list">
+                    <li>Created interactive Figma prototypes and official explanatory videos.</li>
+                    <li>Restructured information architecture and conducted usability tests.</li>
+                    <li>Guided technical implementation and resolved <strong>50+ UX bugs.</strong></li>
+                </ul>
+            </div>
+            <div class="saas-right">
+                <img src="assets/Project-02/saas-optimization.png" alt="SaaS Platform on MacBook" class="zoomable-img needs-flat-white-bg" data-gallery="saas">
+                <a href="https://documentation.cloudhub.etas.com/" target="_blank" rel="noopener noreferrer" class="saas-link">*ETAS Cloud Hub Documentation</a>
+            </div>
         </section>
 
         <!-- You May Also Like -->
@@ -138,8 +187,15 @@
             <polyline points="5 12 12 5 19 12"></polyline>
         </svg>
     </button>
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const overlay = document.getElementById('password-overlay');
