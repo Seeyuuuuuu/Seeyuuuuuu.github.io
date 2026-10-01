@@ -2674,3 +2674,84 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
 .lightbox-flat-white {
     background-color: #ffffff !important;
 }
+
+/* Evolution - Restbus Simulation Block */
+.restbus-block {
+    grid-template-columns: 1fr;
+}
+
+.restbus-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.restbus-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.restbus-container img:hover {
+    transform: translateY(-8px) scale(1.02);
+    position: relative;
+    z-index: 10;
+}
+
+.restbus-overlay-text {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 28%;
+    min-width: 280px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.restbus-overlay-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.restbus-overlay-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+.restbus-overlay-text strong {
+    color: #96007E;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .restbus-container {
+        flex-direction: column;
+    }
+    .restbus-container img {
+        width: 100%;
+        margin: 0;
+    }
+    .restbus-overlay-text {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        padding-top: 40px;
+        pointer-events: auto;
+    }
+}
