@@ -19,8 +19,73 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     
-    <link rel="stylesheet" href="style.css?v=35">
+    <link rel="stylesheet" href="style.css?v=55">
+
+    
+    
+    
+    
+    <style>
+        /* FORCE CACHE BUST FOR FLOW GRID - EXACT HEIGHT APPROACH */
+        .chirp-flow-block .flow-grid {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: center !important;
+            gap: 100px !important;
+            width: 100% !important;
+            align-items: flex-start !important;
+        }
+        
+        .chirp-flow-block .flow-grid > .ideate-item {
+            flex: none !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+        }
+
+        .chirp-flow-block .flow-grid > .ideate-item:first-child {
+            width: 419px !important; /* Math: 360 * 1.164 */
+        }
+
+        .chirp-flow-block .flow-grid > .ideate-item:last-child {
+            width: 680px !important; /* Math: 360 * 1.890 */
+        }
+        
+        .chirp-flow-block .flow-img-container {
+            width: 100% !important;
+            margin-bottom: 32px !important;
+            display: flex !important;
+        }
+        
+        .chirp-flow-block .flow-img-container img {
+            height: 360px !important;
+            width: 100% !important;
+            display: block !important;
+            object-fit: contain !important;
+            object-position: left bottom !important;
+        }
+
+        @media (max-width: 1024px) {
+            .chirp-flow-block .flow-grid {
+                flex-direction: column !important;
+                gap: 60px !important;
+                align-items: center !important;
+            }
+            .chirp-flow-block .flow-grid > .ideate-item:first-child,
+            .chirp-flow-block .flow-grid > .ideate-item:last-child {
+                width: 100% !important;
+            }
+            .chirp-flow-block .flow-img-container img {
+                height: auto !important;
+            }
+        }
+    </style>
+
+
+
+
 </head>
+
 <body>
     <header class="header">
         <nav class="nav-left">
@@ -102,31 +167,185 @@
                 </ol>
             </div>
             <div class="chirp-img-right">
-                <img src="assets/Project-04/design-background.png" alt="Owl Rescue Storyboard" class="zoomable-img needs-flat-white-bg" data-gallery="chirp">
+                <img src="assets/Project-04/design-background.png" alt="Owl Rescue Storyboard" >
             </div>
         </section>
 
 
-        <!-- Image Gallery -->
-        <section class="project-gallery">
+        
+        <!-- Design Process Block -->
+        <section class="responsive-block chirp-process-block">
+            <div class="chirp-process-text">
+                <h2>Design Process</h2>
+                <p>Design Thinking is a human-centered method for problem-solving. Since this project was inspired by a problem I personally experienced, and driven by the desire to solve it, I decided to use this framework to guide me through the entire design process.</p>
+            </div>
+            <div class="chirp-process-img">
+                <img src="assets/Project-04/design-process.png" alt="Design Process Framework" >
+            </div>
+        </section>
+
+        
+        <!-- Emphasize Block -->
+        <section class="responsive-block chirp-emphasize-block">
+            <h2 class="section-title-centered">Emphasize</h2>
             
-            <img src="assets/Project-04/Project-04_03.jpg" alt="Chirp Chirp detail 3" loading="lazy">
-            <img src="assets/Project-04/Project-04_04.jpg" alt="Chirp Chirp detail 4" loading="lazy">
-            <img src="assets/Project-04/Project-04_05.jpg" alt="Chirp Chirp detail 5" loading="lazy">
-            <img src="assets/Project-04/Project-04_06.jpg" alt="Chirp Chirp detail 6" loading="lazy">
-            <img src="assets/Project-04/Project-04_07.jpg" alt="Chirp Chirp detail 7" loading="lazy">
-            <img src="assets/Project-04/Project-04_08.jpg" alt="Chirp Chirp detail 8" loading="lazy">
-        </section>
-
-        <section class="project-video-container">
-            <div class="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ab4xjSEzb38?si=OhY_jRJBhG5LV3Iu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: 10; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            <div class="emphasize-grid">
+                <div class="emphasize-item">
+                    <div class="emphasize-img-container">
+                        <img src="assets/Project-04/emphasize-interview.png" alt="Interview & Survey">
+                    </div>
+                    <h3>Interview & Survey</h3>
+                    <p>I conducted online interviews and distributed surveys to better understand people's opinions and experiences regarding bird rescue. This helped me to highlight the needs of different target groups.</p>
+                </div>
+                
+                <div class="emphasize-item">
+                    <div class="emphasize-img-container">
+                        <img src="assets/Project-04/emphasize-empathy-map.png" alt="Empathy Map">
+                    </div>
+                    <h3>Empathy Map</h3>
+                    <p>I summarized and analyzed the data from the interviews and surveys and created an empathy map to study the behavior and thoughts of various user groups.</p>
+                </div>
+                
+                <div class="emphasize-item">
+                    <div class="emphasize-img-container">
+                        <img src="assets/Project-04/emphasize-persona.png" alt="Persona">
+                    </div>
+                    <h3>Persona</h3>
+                    <p>I analyzed and summarized the collected data to use it for personalizing the users. From this, I created four personas that represent the larger user groups.</p>
+                </div>
+                
+                <div class="emphasize-item">
+                    <div class="emphasize-img-container">
+                        <img src="assets/Project-04/emphasize-user-journey-map.png" alt="User Journey Map">
+                    </div>
+                    <h3>User Journey Map</h3>
+                    <p>With the help of a User Journey Map, the actual needs of the users can be recognized more clearly, and the potential needs of users in situations without Chirp Chirp can be explored.</p>
+                </div>
             </div>
         </section>
 
-        <section class="project-gallery">
-            <img src="assets/Project-04/Project-04_09.jpg" alt="Chirp Chirp detail 9" loading="lazy">
-            <img src="assets/Project-04/Project-04_10.jpg" alt="Chirp Chirp detail 10" loading="lazy">
+        
+        <!-- Define Block -->
+        <section class="responsive-block chirp-define-block">
+            <h2 class="section-title-centered">Define</h2>
+            <div class="chirp-define-img">
+                <img src="assets/Project-04/define.png" alt="Value Proposition Canvas">
+            </div>
+            <div class="chirp-define-text">
+                <h3>Value Proposition</h3>
+                <p>In this phase, I summarized the pain points and needs of the existing rescue processes through problem hypotheses and statements and suggested feasible solutions.</p>
+            </div>
+        </section>
+
+        
+        <!-- Ideate Block -->
+        <section class="responsive-block chirp-ideate-block">
+            <h2 class="section-title-centered">Ideate</h2>
+            
+            <div class="ideate-grid">
+                <div class="ideate-item">
+                    <div class="ideate-img-container">
+                        <img src="assets/Project-04/ideate-competitive-audit.png" alt="Competitive Audit">
+                    </div>
+                    <h3>Competitive Audit</h3>
+                    <p>By studying the strengths and weaknesses of competing products, I gained a clearer understanding of how this project can evolve.</p>
+                </div>
+                
+                <div class="ideate-item">
+                    <div class="ideate-img-container">
+                        <img src="assets/Project-04/ideate-story-board.png" alt="Story Board">
+                    </div>
+                    <h3>Story Board</h3>
+                    <p>By visualizing this system, we can clearly understand the usage scenarios and workflows.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Flow & Architecture Block -->
+        <section class="responsive-block chirp-flow-block" >
+            <div class="flow-grid" style="display: flex; gap: 100px; width: 100%; align-items: flex-start; justify-content: center;">
+                <div class="ideate-item">
+                    <div class="flow-img-container">
+                        <img src="assets/Project-04/user-flow.png" alt="User Flow">
+                    </div>
+                    <h3>User Flow</h3>
+                    <p>By predicting the user processes during the use of the product, the flow is connected and checked to ensure that all important requirements are met and functionality transitions run smoothly.</p>
+                </div>
+                
+                <div class="ideate-item">
+                    <div class="flow-img-container">
+                        <img src="assets/Project-04/information-architectrue.png" alt="Information Architecture">
+                    </div>
+                    <h3>Information Architecture</h3>
+                    <p>The transformation of the user flow into an information architecture facilitates the subsequent creation of wireframes.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Wireframe & UI Design Block -->
+        <section class="responsive-block chirp-wireframe-block">
+            <div class="wireframe-left">
+                <h2 class="column-title">Wireframe & Test</h2>
+                <div class="wireframe-img-container">
+                    <img src="assets/Project-04/wireframe.png" alt="Wireframe & Test">
+                </div>
+                <div class="wireframe-text">
+                    <h3>Wireframe & Usability Test</h3>
+                    <p>I developed the wireframe into a low-fidelity prototype and conducted a usability test to minimize future time waste and check whether the product has functions that need to be improved or added.</p>
+                </div>
+            </div>
+            
+            <div class="wireframe-right">
+                <h2 class="column-title">User Interface Design</h2>
+                <div class="ui-design-img-container">
+                    <img src="assets/Project-04/ui-design.png" alt="User Interface Design">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Screens Section -->
+        <section class="chirp-screens-bg">
+            <div class="chirp-screens-container">
+                <!-- Top Row -->
+                <div class="screens-row">
+                    <div class="screens-text">
+                        <p>On the rescue page, the current location can be determined, and the current condition can be immediately transmitted to nearby rescue teams and relevant institutions.</p>
+                        <p>Additionally, the user can provide first aid by identifying the species, following instructions on the site, and using tools from the transport device.</p>
+                    </div>
+                    <div class="screens-img">
+                        <img src="assets/Project-04/screens-1.png" alt="Rescue Page Screens" class="zoomable-img" data-gallery="chirp-screens">
+                    </div>
+                </div>
+                
+                <!-- Bottom Row -->
+                <div class="screens-row reverse">
+                    <div class="screens-text">
+                        <p>Users can not only participate in bird rescue actions but also become members of bird-related communities to gain more knowledge. By obtaining a certified qualification, they can also be included as rescue forces in the emergency system.</p>
+                        <p>Furthermore, rescuers receive feedback on the progress of rescue actions, which increases their motivation to participate.</p>
+                    </div>
+                    <div class="screens-img img-narrow">
+                        <img src="assets/Project-04/screens-2.png" alt="Community Page Screens" class="zoomable-img" data-gallery="chirp-screens">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Product Design Block -->
+        <section class="responsive-block chirp-product-block">
+            <h2 class="section-title-centered">Product Design</h2>
+            
+            <div class="product-img-container">
+                <img src="assets/Project-04/product-design.png" alt="Product Design Board" class="zoomable-img needs-flat-white-bg" data-gallery="chirp-product">
+            </div>
+            
+            <div class="product-text">
+                <h3>Product Design</h3>
+                <p>To create a complete system with the app, I also developed a product design. Based on the previous research, I designed a transport device for birds through sketches, models, and interactive devices.</p>
+            </div>
         </section>
 
         <!-- You May Also Like -->
@@ -156,6 +375,15 @@
             <polyline points="5 12 12 5 19 12"></polyline>
         </svg>
     </button>
+
+
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
 
     <script src="script.js"></script>
 </body>

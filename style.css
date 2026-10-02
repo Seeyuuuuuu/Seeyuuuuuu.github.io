@@ -2881,13 +2881,6 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.chirp-img-right img:hover {
-    transform: translateY(-8px) scale(1.02);
-    position: relative;
-    z-index: 10;
 }
 
 @media (max-width: 1024px) {
@@ -2895,4 +2888,519 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+}
+
+/* Project 04: Design Process */
+.chirp-process-block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.chirp-process-text {
+    max-width: 55%;
+}
+
+.chirp-process-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin: 0 0 24px 0;
+}
+
+.chirp-process-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+.chirp-process-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .chirp-process-text {
+        max-width: 100%;
+    }
+}
+
+/* Project 04: Emphasize */
+.chirp-emphasize-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title-centered {
+    font-size: 28px; /* Matched to previous h2 styles */
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 24px 0;
+    text-align: center;
+}
+
+.emphasize-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 100px; /* 80px vertical, 100px horizontal */
+    width: 100%;
+}
+
+.emphasize-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.emphasize-img-container {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+}
+
+.emphasize-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.emphasize-item h3 {
+    font-size: 22px; /* Differentiated from main section titles */
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+}
+
+.emphasize-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .emphasize-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .emphasize-img-container {
+        height: auto;
+        min-height: 200px;
+    }
+    .section-title-centered {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+/* Project 04: Define */
+.chirp-define-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chirp-define-img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.chirp-define-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.chirp-define-text {
+    width: 100%;
+    text-align: left;
+}
+
+.chirp-define-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+}
+
+.chirp-define-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+    max-width: 70%;
+}
+
+@media (max-width: 1024px) {
+    .chirp-define-text p {
+        max-width: 100%;
+    }
+}
+
+/* Project 04: Ideate */
+.chirp-ideate-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ideate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    width: 100%;
+}
+
+.ideate-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.ideate-img-container {
+    display: flex;
+    align-items: flex-end; /* Align to bottom so text underneath is perfectly horizontal */
+    justify-content: flex-start;
+    height: 560px; /* Provides a uniform height box for both images */
+    margin-bottom: 32px;
+}
+
+.ideate-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.ideate-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+}
+
+.ideate-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+@media (max-width: 1440px) {
+    .ideate-img-container {
+        height: 40vw; /* Scales height responsively on medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .ideate-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .ideate-img-container {
+        height: auto;
+    }
+}
+
+/* Project 04: Flow & Architecture */
+.flow-grid {
+    display: grid;
+    grid-template-columns: 38fr 62fr; /* Proportional to image aspect ratios to make them equal height */
+    gap: 100px;
+    width: 100%;
+}
+
+.flow-img-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+}
+
+.flow-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .flow-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+/* Project 04: Swipeable Design Process */
+@media (max-width: 1024px) {
+    .chirp-process-img {
+        width: calc(100% + 240px);
+        margin-left: -120px;
+        margin-right: -120px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+    }
+    .chirp-process-img::-webkit-scrollbar {
+        height: 3px;
+    }
+    .chirp-process-img::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 0 120px;
+    }
+    .chirp-process-img::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+    .chirp-process-img img {
+        width: 180%; /* Expand to make text readable */
+        max-width: none;
+        padding-left: 120px;
+        padding-right: 120px;
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .chirp-process-img {
+        width: calc(100% + 160px);
+        margin-left: -80px;
+        margin-right: -80px;
+    }
+    .chirp-process-img::-webkit-scrollbar-track {
+        margin: 0 80px;
+    }
+    .chirp-process-img img {
+        width: 200%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chirp-process-img {
+        width: calc(100% + 48px);
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    .chirp-process-img::-webkit-scrollbar-track {
+        margin: 0 24px;
+    }
+    .chirp-process-img img {
+        width: 300%; /* Make 7 steps very readable */
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+/* Project 04: Wireframe & UI Design */
+.chirp-wireframe-block {
+    align-items: flex-start;
+    grid-template-columns: 45fr 55fr; /* Tuned to match the new cropped wireframe image */
+}
+
+.wireframe-left, .wireframe-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.column-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #1a1a1a;
+}
+
+.wireframe-img-container, .ui-design-img-container {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.wireframe-img-container img, .ui-design-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wireframe-text {
+    width: 100%;
+    text-align: left;
+}
+
+.wireframe-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+}
+
+.wireframe-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .chirp-wireframe-block {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+}
+
+/* Project 04: Screens Section */
+.chirp-screens-bg {
+    background-color: #CAE2C2;
+    width: 100%;
+    padding: 140px 0;
+    margin-bottom: 160px;
+}
+
+.chirp-screens-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.screens-row {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.screens-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.screens-text {
+    flex: 1;
+}
+
+.screens-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.screens-text p:last-child {
+    margin-bottom: 0;
+}
+
+.screens-img {
+    flex: 1.4;
+}
+
+.screens-img.img-narrow {
+    flex: 1;
+}
+
+.screens-row.reverse .screens-text {
+    flex: 1.2;
+}
+
+.screens-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: zoom-in;
+}
+
+.screens-img img:hover {
+    transform: translateY(-8px) scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .chirp-screens-container {
+        padding: 0 120px;
+        gap: 80px;
+    }
+    .screens-row, .screens-row.reverse {
+        flex-direction: column;
+    }
+    .screens-img, .screens-img.img-narrow, .screens-text, .screens-row.reverse .screens-text {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .chirp-screens-container {
+        padding: 0 80px;
+    }
+    .chirp-screens-bg {
+        padding: 80px 0;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chirp-screens-container {
+        padding: 0 24px;
+    }
+    .screens-text p {
+        font-size: 16px;
+    }
+}
+
+/* Project 04: Product Design Section */
+.chirp-product-block {
+    display: flex !important; /* Override .responsive-block grid */
+    flex-direction: column;
+    align-items: center;
+}
+
+.chirp-product-block .section-title-centered {
+    margin-bottom: 64px;
+}
+
+.product-img-container {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.product-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: zoom-in;
+}
+
+.product-img-container img:hover {
+    transform: translateY(-8px) scale(1.03);
+    position: relative;
+    z-index: 10;
+}
+
+.product-text {
+    width: 100%;
+    text-align: left;
+}
+
+.product-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+}
+
+.product-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
 }
