@@ -2828,3 +2828,71 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
+
+/* Project 04: Chirp Chirp - Design Background */
+.chirp-background-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.chirp-text-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.chirp-text-left h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin: 0 0 24px 0;
+}
+
+.chirp-text-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0 0 24px 0;
+}
+
+.chirp-text-left .highlight-text {
+    font-weight: 600;
+    color: #4a4a4a; /* slightly darker/bolder grey */
+    margin-bottom: 16px;
+}
+
+.chirp-features-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.chirp-features-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.chirp-img-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chirp-img-right img:hover {
+    transform: translateY(-8px) scale(1.02);
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .chirp-background-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
