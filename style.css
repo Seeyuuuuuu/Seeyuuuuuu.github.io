@@ -3404,3 +3404,167 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     color: #222;
     margin: 0;
 }
+
+/* ==========================================================================
+   Project 05: Spatial Visions
+   ========================================================================== */
+
+.spatial-block {
+    display: grid;
+    grid-template-columns: 35fr 65fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.spatial-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spatial-left h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.spatial-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.spatial-right {
+    width: 100%;
+}
+
+.spatial-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: zoom-in;
+}
+
+.spatial-right img:hover {
+    transform: translateY(-8px) scale(1.02);
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .spatial-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Living Room Design Block */
+.living-room-block {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 120px;
+}
+
+.living-room-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.living-img-wrapper {
+    width: 100%;
+}
+
+.living-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: zoom-in;
+}
+
+.living-img-wrapper img:hover {
+    transform: translateY(-8px) scale(1.02);
+    position: relative;
+    z-index: 10;
+}
+
+.living-room-text {
+    width: calc(50% - 20px);
+    text-align: left;
+}
+
+.living-room-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.living-room-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .living-room-images {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .living-room-text {
+        width: 100%;
+    }
+}
+
+/* Apartment Design Block */
+.apartment-block {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 120px;
+}
+
+.apartment-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: left;
+}
+
+.apartment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.apartment-img-wrapper {
+    width: 100%;
+}
+
+.apartment-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: zoom-in;
+}
+
+.apartment-img-wrapper img:hover {
+    transform: translateY(-8px) scale(1.02);
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .apartment-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
