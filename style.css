@@ -485,8 +485,10 @@ body {
     backface-visibility: hidden;
 }
 
-.lessons-mascot img:hover {
-    transform: translateY(-8px) scale(1.05);
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .lessons-mascot img:hover {
+        transform: translateY(-8px) scale(1.05);
+    }
 }
 
 .lessons-qr-block {
@@ -571,11 +573,13 @@ body {
     cursor: zoom-in;
 }
 
-.synergy-img:hover {
-    transform: translateY(-8px) scale(1.03);
-    opacity: 0.95;
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .synergy-img:hover {
+        transform: translateY(-8px) scale(1.03);
+        opacity: 0.95;
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .synergy-subtitle {
@@ -821,14 +825,14 @@ body {
     align-items: start;
 }
 
-.overview-left h3 {
+.overview-left h3, .overview-right h3 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 24px;
     color: #0d2c54;
 }
 
-.overview-left p {
+.overview-left p, .overview-right p {
     font-size: 16px;
     line-height: 1.6;
     color: #0d2c54;
@@ -1428,21 +1432,23 @@ body {
     backface-visibility: hidden;
 }
 
-.empowering-bg:hover, 
-.woman-img:hover, 
-.lowering-phones img:hover, 
-.empowering-phones img:hover, 
-.projecting-main-img:hover, 
-.conversion-img-wrapper img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
-}
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .empowering-bg:hover, 
+    .woman-img:hover, 
+    .lowering-phones img:hover, 
+    .empowering-phones img:hover, 
+    .projecting-main-img:hover, 
+    .conversion-img-wrapper img:hover {
+        transform: translateY(-8px) scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
 
-.refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
+    .refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
+        transform: translateY(-8px) scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .after-phones {
@@ -1554,10 +1560,12 @@ body {
     backface-visibility: hidden;
 }
 
-.projecting-phones-top img:hover, .projecting-phones-bottom img:hover {
-    transform: translateY(-8px) scale(1.15);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .projecting-phones-top img:hover, .projecting-phones-bottom img:hover {
+        transform: translateY(-8px) scale(1.15);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .projecting-phones-top img {
@@ -1858,26 +1866,7 @@ body {
         grid-template-columns: 1fr !important;
     }
 
-    
-
-.empowering-bg:hover, 
-.woman-img:hover, 
-.lowering-phones img:hover, 
-.empowering-phones img:hover, 
-.projecting-main-img:hover, 
-.conversion-img-wrapper img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
-}
-
-.refining-before img:hover, .after-phones img:hover, .ecosystem-phones img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
-}
-
-.after-phones {
+    .after-phones {
         width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -1888,6 +1877,7 @@ body {
         scrollbar-width: none;
         justify-content: flex-start;
     }
+
     .after-phones::-webkit-scrollbar {
         display: none;
     }
@@ -2168,10 +2158,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-.trevo-blueprint-img:hover {
-    transform: translateY(-8px) scale(1.03);
-    z-index: 10;
-    position: relative;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .trevo-blueprint-img:hover {
+        transform: translateY(-8px) scale(1.03);
+        z-index: 10;
+        position: relative;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2329,8 +2321,10 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: zoom-in;
 }
-.tangible-img:hover {
-    transform: translateY(-4px) scale(1.02);
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .tangible-img:hover {
+        transform: translateY(-4px) scale(1.02);
+    }
 }
 
 .qr-code-block {
@@ -2347,8 +2341,10 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.qr-img:hover {
-    transform: scale(1.05) translateY(-2px);
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .qr-img:hover {
+        transform: scale(1.05) translateY(-2px);
+    }
 }
 
 .qr-code-block p {
@@ -2435,10 +2431,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     backface-visibility: hidden;
 }
 
-.trade-show-left img:hover, .trade-show-photos img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .trade-show-left img:hover, .trade-show-photos img:hover {
+        transform: translateY(-8px) scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 /* Evolution - Fleet Operations Block */
@@ -2488,10 +2486,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.fleet-bottom img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .fleet-bottom img:hover {
+        transform: translateY(-8px) scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2665,13 +2665,16 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.saas-right img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .saas-right img:hover {
+        transform: translateY(-8px) scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .lightbox-flat-white {
+    padding: 40px;
     background-color: #ffffff !important;
 }
 
@@ -2694,10 +2697,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.restbus-container img:hover {
-    transform: translateY(-8px) scale(1.02);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .restbus-container img:hover {
+        transform: translateY(-8px) scale(1.02);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .restbus-overlay-text {
@@ -3317,10 +3322,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-.screens-img img:hover {
-    transform: translateY(-8px) scale(1.05);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .screens-img img:hover {
+        transform: translateY(-8px) scale(1.05);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -3380,10 +3387,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-.product-img-container img:hover {
-    transform: translateY(-8px) scale(1.03);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .product-img-container img:hover {
+        transform: translateY(-8px) scale(1.03);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .product-text {
@@ -3448,10 +3457,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-.spatial-right img:hover {
-    transform: translateY(-8px) scale(1.02);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .spatial-right img:hover {
+        transform: translateY(-8px) scale(1.02);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -3487,10 +3498,12 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-.living-img-wrapper img:hover {
-    transform: translateY(-8px) scale(1.02);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .living-img-wrapper img:hover {
+        transform: translateY(-8px) scale(1.02);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .living-room-text {
@@ -3556,15 +3569,386 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-.apartment-img-wrapper img:hover {
-    transform: translateY(-8px) scale(1.02);
-    position: relative;
-    z-index: 10;
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .apartment-img-wrapper img:hover {
+        transform: translateY(-8px) scale(1.02);
+        position: relative;
+        z-index: 10;
+    }
 }
 
 @media (max-width: 1024px) {
     .apartment-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+}
+
+/* ==========================================================================
+   Project 06: ErgoSpace
+   ========================================================================== */
+
+.ergo-problem-block {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    /* Overrides the default gap: 80px and align-items from responsive-block if needed */
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.ergo-section-header h2 {
+    font-size: 42px;
+    font-weight: 800;
+    font-style: italic;
+    color: #E28864; /* Coral orange matching mockup */
+    margin-bottom: 64px;
+    letter-spacing: -0.5px;
+}
+
+.ergo-img-wrapper {
+    width: 100%;
+}
+
+.ergo-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ergo-img-wrapper img.zoomable-img {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: zoom-in;
+}
+
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+    .ergo-img-wrapper img.zoomable-img:hover {
+        transform: translateY(-8px) scale(1.02);
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ergo-problem-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.ergo-research-block {
+    margin-bottom: 120px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Add an asymmetric grid modifier for the Analysis block */
+.ergo-analysis-block {
+    display: grid;
+    grid-template-columns: 65fr 35fr;
+    gap: 60px;
+    align-items: stretch; /* So left and right columns share the exact same height */
+    margin-bottom: 120px;
+}
+
+.ergo-analysis-block .ergo-col-left,
+.ergo-analysis-block .ergo-col-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ergo-analysis-block .ergo-col-left .ergo-img-wrapper {
+    margin-top: auto; /* Pushes left image to the absolute bottom */
+}
+
+.ergo-analysis-block .ergo-findings {
+    margin-top: auto; /* Pushes the findings to the bottom */
+}
+
+@media (max-width: 1024px) {
+    .ergo-analysis-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.ergo-subtitle {
+    font-style: italic;
+    color: #92a2a8;
+    font-size: 16px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.ergo-findings {
+    margin-top: 64px;
+}
+
+.ergo-findings h3 {
+    font-size: 32px;
+    font-weight: 800;
+    font-style: italic;
+    color: #E28864;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.ergo-findings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ergo-findings li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: #777;
+}
+
+.ergo-findings li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: #E28864;
+    font-size: 14px;
+    top: 0;
+}
+
+.ergo-findings li strong {
+    color: #333;
+    font-weight: 700;
+}
+
+.right-analysis-img {
+    width: 85%; /* Make the image smaller to save vertical space */
+}
+
+/* Ergo Details Block */
+.ergo-details-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: stretch;
+    margin-bottom: 120px;
+}
+
+.ergo-details-block .ergo-col-left,
+.ergo-details-block .ergo-col-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .ergo-details-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ergo-mindmap-header h2 {
+    margin-bottom: 12px;
+}
+
+.ergo-mindmap-img {
+    width: 100%;
+    margin-left: auto;
+}
+
+.ergo-design-point-group {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.ergo-design-point-group .ergo-section-header h2 {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .ergo-mindmap-img {
+        width: 100%;
+    }
+}
+
+/* Ergo Ideation Block
+   Both cropped images share the exact pixel height (1186px) with widths 639px and 2094px.
+   Using minmax(0, 639fr) minmax(0, 2094fr) + nowrap headers ensures identical header heights
+   and identical image heights so top and bottom edges align to the pixel. */
+.ergo-ideation-block {
+    display: grid;
+    grid-template-columns: minmax(0, 639fr) minmax(0, 2094fr);
+    gap: 60px;
+    align-items: start;
+    margin-bottom: 120px;
+}
+
+.ergo-ideation-block .ergo-col-left,
+.ergo-ideation-block .ergo-col-right {
+    min-width: 0;
+}
+
+.ergo-ideation-block .ergo-section-header h2 {
+    white-space: nowrap;
+}
+
+.ergo-header-right h2 {
+    text-align: right;
+}
+
+.ergo-ideation-card img {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 1024px) {
+    .ergo-ideation-block {
+        grid-template-columns: 1fr;
+    }
+    .ergo-ideation-block .ergo-section-header h2 {
+        white-space: normal;
+    }
+    .ergo-header-right h2 {
+        text-align: left;
+    }
+}
+
+/* Ergo Final Structure Block
+   58:42 asymmetric columns with bottom alignment so both image bottoms align flush
+   and "Connection Strip" at the top of connector.png aligns with the "Final structure" header. */
+.ergo-structure-block {
+    display: grid;
+    grid-template-columns: minmax(0, 58fr) minmax(0, 42fr);
+    gap: 50px;
+    align-items: flex-end;
+    margin-bottom: 120px;
+}
+
+.ergo-structure-block .ergo-col-left,
+.ergo-structure-block .ergo-col-right {
+    min-width: 0;
+}
+
+.ergo-structure-block .ergo-section-header h2 {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .ergo-structure-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ergo Cabinet & Desktop Booster Block
+   Column widths follow the cropped image aspect ratios (1519/1448 and 1142/1364 -> 1049:837)
+   so both images render at the exact same height with top and bottom edges aligned. */
+.ergo-cabinet-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1049fr) minmax(0, 837fr);
+    gap: 60px;
+    align-items: start;
+    margin-bottom: 120px;
+}
+
+.ergo-cabinet-block .ergo-col-left,
+.ergo-cabinet-block .ergo-col-right {
+    min-width: 0;
+}
+
+.ergo-cabinet-block .ergo-section-header h2 {
+    white-space: nowrap;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+    .ergo-cabinet-block {
+        grid-template-columns: 1fr;
+    }
+    .ergo-cabinet-block .ergo-section-header h2 {
+        white-space: normal;
+    }
+}
+
+/* Ergo Operation Panel & Details Block
+   56:44 columns with stretched flex columns and margin-top: auto on both bottom groups
+   so both top headers/images and bottom images align flush. */
+.ergo-operation-block {
+    display: grid;
+    grid-template-columns: minmax(0, 56fr) minmax(0, 44fr);
+    gap: 60px;
+    align-items: stretch;
+    margin-bottom: 120px;
+}
+
+.ergo-operation-block .ergo-col-left,
+.ergo-operation-block .ergo-col-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+}
+
+.ergo-operation-block .ergo-section-header h2 {
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+
+.ergo-height-adjust-img {
+    margin-top: auto;
+    padding-top: 32px;
+}
+
+.ergo-details-bottom-group {
+    margin-top: auto;
+    padding-top: 32px;
+}
+
+@media (max-width: 1024px) {
+    .ergo-operation-block {
+        grid-template-columns: 1fr;
+    }
+    .ergo-operation-block .ergo-section-header h2 {
+        white-space: normal;
+    }
+}
+
+/* Ergo Design Presentation (Different Forms) Block
+   Column widths follow the cropped image aspect ratios (1224/1060 and 1575/1110 -> 1155:1419)
+   with bottom alignment so both image top and bottom edges align flush. */
+.ergo-forms-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1155fr) minmax(0, 1419fr);
+    gap: 50px;
+    align-items: flex-end;
+    margin-bottom: 120px;
+}
+
+.ergo-forms-block .ergo-col-left,
+.ergo-forms-block .ergo-col-right {
+    min-width: 0;
+}
+
+.ergo-forms-block .ergo-section-header h2 {
+    white-space: nowrap;
+    margin-bottom: 16px;
+}
+
+.ergo-forms-subtitle {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5b6970;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+    .ergo-forms-block {
+        grid-template-columns: 1fr;
+    }
+    .ergo-forms-block .ergo-section-header h2 {
+        white-space: normal;
     }
 }
