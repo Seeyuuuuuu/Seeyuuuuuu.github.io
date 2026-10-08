@@ -485,7 +485,7 @@ body {
     backface-visibility: hidden;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .lessons-mascot img:hover {
         transform: translateY(-8px) scale(1.05);
     }
@@ -573,7 +573,7 @@ body {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .synergy-img:hover {
         transform: translateY(-8px) scale(1.03);
         opacity: 0.95;
@@ -595,7 +595,7 @@ body {
     color: #444;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .lessons-learned-block {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -1026,7 +1026,7 @@ body {
 }
 
 /* Project Details Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .project-info, .project-video-container, .project-gallery, .related-projects, .responsive-block {
         padding-left: 120px;
         padding-right: 120px;
@@ -1259,7 +1259,7 @@ body {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .collage-container { margin: 60px 0; }
 }
 
@@ -1432,7 +1432,7 @@ body {
     backface-visibility: hidden;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .empowering-bg:hover, 
     .woman-img:hover, 
     .lowering-phones img:hover, 
@@ -1560,7 +1560,7 @@ body {
     backface-visibility: hidden;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .projecting-phones-top img:hover, .projecting-phones-bottom img:hover {
         transform: translateY(-8px) scale(1.15);
         position: relative;
@@ -1614,7 +1614,7 @@ body {
 .projecting-phones-bottom img:nth-child(1) { flex: 232; }
 .projecting-phones-bottom img:nth-child(2) { flex: 228; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .projecting-block {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -1694,7 +1694,7 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1439px) {
     /* Tablet 2-column layout */
     .refining-block {
         grid-template-areas: 
@@ -1783,7 +1783,7 @@ body {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .lowering-block {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1825,7 +1825,7 @@ body {
 }
 
 /* Custom flex scaling to equalize phone body sizes */
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
     .lowering-phones img:nth-child(1) { flex: 279; }
     .lowering-phones img:nth-child(2) { flex: 325; }
     .lowering-phones img:nth-child(3) { flex: 303; }
@@ -1833,7 +1833,7 @@ body {
 
 /* Foolproof Responsive Display Classes */
 .mobile-only { display: none !important; }
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .desktop-only { display: none !important; }
     .mobile-only { display: block !important; }
 }
@@ -1847,7 +1847,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .refining-block {
         grid-template-areas:
             "before"
@@ -1913,7 +1913,7 @@ div.carousel-dots-container.mobile-only {
 }
 
 /* Show dots ONLY when carousels are active */
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .lowering-block div.carousel-dots-container.mobile-only {
         display: flex !important;
     }
@@ -2044,14 +2044,14 @@ div.carousel-dots-container.mobile-only {
     width: 307px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1439px) {
     .empowering-block {
         grid-template-columns: 1fr;
         gap: 60px;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .empowering-text-overlay {
         padding: 32px 40px;
     }
@@ -2158,7 +2158,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .trevo-blueprint-img:hover {
         transform: translateY(-8px) scale(1.03);
         z-index: 10;
@@ -2166,7 +2166,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .trevo-blueprint-block {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -2321,7 +2321,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: zoom-in;
 }
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .tangible-img:hover {
         transform: translateY(-4px) scale(1.02);
     }
@@ -2341,7 +2341,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .qr-img:hover {
         transform: scale(1.05) translateY(-2px);
     }
@@ -2355,7 +2355,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     max-width: 250px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .trevo-tangible-block {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -2417,7 +2417,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .trade-show-block {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -2431,7 +2431,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     backface-visibility: hidden;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .trade-show-left img:hover, .trade-show-photos img:hover {
         transform: translateY(-8px) scale(1.05);
         position: relative;
@@ -2486,7 +2486,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .fleet-bottom img:hover {
         transform: translateY(-8px) scale(1.05);
         position: relative;
@@ -2494,7 +2494,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .fleet-block {
         gap: 24px;
     }
@@ -2548,7 +2548,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .fleet-bottom-wrapper {
         width: calc(100% + 48px);
         margin-left: -24px;
@@ -2654,7 +2654,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .saas-block {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -2665,7 +2665,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .saas-right img:hover {
         transform: translateY(-8px) scale(1.05);
         position: relative;
@@ -2697,7 +2697,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .restbus-container img:hover {
         transform: translateY(-8px) scale(1.02);
         position: relative;
@@ -2740,7 +2740,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     font-weight: 600;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .restbus-container {
         flex-direction: column;
     }
@@ -2813,7 +2813,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     font-weight: 600;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .brand-block {
         display: flex;
         flex-direction: column;
@@ -2888,7 +2888,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .chirp-background-block {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -2927,7 +2927,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .chirp-process-text {
         max-width: 100%;
     }
@@ -2989,7 +2989,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .emphasize-grid {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -3044,7 +3044,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     max-width: 70%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .chirp-define-text p {
         max-width: 100%;
     }
@@ -3098,13 +3098,13 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin: 0;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .ideate-img-container {
         height: 40vw; /* Scales height responsively on medium screens */
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ideate-grid {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -3134,7 +3134,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .flow-grid {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -3142,7 +3142,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
 }
 
 /* Project 04: Swipeable Design Process */
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .chirp-process-img {
         width: calc(100% + 240px);
         margin-left: -120px;
@@ -3253,7 +3253,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .chirp-wireframe-block {
         grid-template-columns: 1fr;
         gap: 80px;
@@ -3322,7 +3322,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .screens-img img:hover {
         transform: translateY(-8px) scale(1.05);
         position: relative;
@@ -3330,7 +3330,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .chirp-screens-container {
         padding: 0 120px;
         gap: 80px;
@@ -3387,7 +3387,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .product-img-container img:hover {
         transform: translateY(-8px) scale(1.03);
         position: relative;
@@ -3457,7 +3457,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .spatial-right img:hover {
         transform: translateY(-8px) scale(1.02);
         position: relative;
@@ -3465,7 +3465,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .spatial-block {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -3498,7 +3498,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .living-img-wrapper img:hover {
         transform: translateY(-8px) scale(1.02);
         position: relative;
@@ -3525,7 +3525,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .living-room-images {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -3569,7 +3569,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .apartment-img-wrapper img:hover {
         transform: translateY(-8px) scale(1.02);
         position: relative;
@@ -3577,7 +3577,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .apartment-grid {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -3620,7 +3620,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     cursor: zoom-in;
 }
 
-@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
     .ergo-img-wrapper img.zoomable-img:hover {
         transform: translateY(-8px) scale(1.02);
         position: relative;
@@ -3628,7 +3628,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-problem-block {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -3665,7 +3665,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin-top: auto; /* Pushes the findings to the bottom */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-analysis-block {
         grid-template-columns: 1fr;
     }
@@ -3744,7 +3744,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-details-block {
         grid-template-columns: 1fr;
     }
@@ -3768,7 +3768,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin-bottom: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-mindmap-img {
         width: 100%;
     }
@@ -3803,7 +3803,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-ideation-block {
         grid-template-columns: 1fr;
     }
@@ -3835,7 +3835,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin-bottom: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-structure-block {
         grid-template-columns: 1fr;
     }
@@ -3862,7 +3862,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin-bottom: 32px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-cabinet-block {
         grid-template-columns: 1fr;
     }
@@ -3905,7 +3905,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     padding-top: 32px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-operation-block {
         grid-template-columns: 1fr;
     }
@@ -3944,7 +3944,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
     margin-bottom: 32px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
     .ergo-forms-block {
         grid-template-columns: 1fr;
     }
