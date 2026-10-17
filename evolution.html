@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     
-    <link rel="stylesheet" href="style.css?v=88">
+    <link rel="stylesheet" href="style.css?v=90">
 </head>
 <body>
     <header class="header">
@@ -239,7 +239,7 @@
             }
 
             const checkPassword = () => {
-                if (input.value === 'etas') {
+                if (input.value === 'etas' || input.value.trim().toLowerCase() === 'etas') {
                     sessionStorage.setItem('evolution_unlocked', 'true');
                     overlay.style.display = 'none';
                     content.style.display = 'block';
@@ -250,9 +250,20 @@
                     error.style.display = 'block';
                     error.textContent = 'Incorrect password. Please try again.';
                     input.value = '';
+                    btn.classList.remove('active');
                 }
             };
 
+            const validateInput = () => {
+                if (input.value === 'etas' || input.value.trim().toLowerCase() === 'etas') {
+                    btn.classList.add('active');
+                    error.style.display = 'none';
+                } else {
+                    btn.classList.remove('active');
+                }
+            };
+
+            input.addEventListener('input', validateInput);
             btn.addEventListener('click', checkPassword);
             input.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') checkPassword();
