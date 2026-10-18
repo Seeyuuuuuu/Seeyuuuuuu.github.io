@@ -118,12 +118,19 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 32px;
-    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+    height: 180px;
+    padding: 32px 32px 24px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0) 100%);
     color: #ffffff;
     opacity: 0;
     transform: translateY(10px);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    box-sizing: border-box;
+    pointer-events: none;
 }
 
 .gallery-item:hover .overlay {
@@ -134,14 +141,30 @@ body {
 .overlay h3 {
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     letter-spacing: -0.01em;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .overlay p {
     font-size: 15px;
     font-weight: 400;
-    opacity: 0.8;
+    line-height: 1.45;
+    opacity: 0.85;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overlay p + p {
+    margin-top: 4px;
 }
 
 /* Back to Top Button */
@@ -741,6 +764,20 @@ body {
     }
     .gallery-container {
         padding: 120px 24px 24px;
+    }
+    .overlay {
+        height: 140px;
+        padding: 24px 20px 16px;
+    }
+    .overlay h3 {
+        font-size: 18px;
+        margin-bottom: 4px;
+        -webkit-line-clamp: 1;
+    }
+    .overlay p {
+        font-size: 13px;
+        line-height: 1.4;
+        -webkit-line-clamp: 2;
     }
     .back-to-top {
         bottom: 24px;
