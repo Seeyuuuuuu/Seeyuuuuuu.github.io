@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse - Siyu Li</title>
+    <meta name="description" content="Integrating AI and scalable design systems for digital media.">
+    
+    <!-- SEO & Keywords -->
+    <meta name="keywords" content="Siyu Li, Design Portfolio, UX Design, UI Design, Design System, AI, Handelsblatt Media Group, Synapse">
+    <meta name="author" content="Siyu Li">
+    
+    <!-- Open Graph (LinkedIn, WeChat Link Preview) -->
+    <meta property="og:title" content="Synapse - Siyu Li">
+    <meta property="og:description" content="Integrating AI and scalable design systems for digital media.">
+    <meta property="og:type" content="website">
+    
+    <!-- Web-Clip / Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="style.css?v=95">
+</head>
+<body class="synapse-page">
+    <header class="header">
+        <nav class="nav-left">
+            <a href="index.html" class="nav-link active">Work</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+        <div class="nav-right">
+            <a href="index.html" class="brand-name">Siyu Li</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </header>
+
+    <div class="mobile-menu-overlay">
+        <button class="mobile-menu-close" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link active">Work</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+        </nav>
+    </div>
+
+    <!-- Password Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Protected Project</h2>
+            <p>This project is password protected.<br>Please enter the password to view.</p>
+            <div class="password-input-group">
+                <input type="password" id="project-password" placeholder="Enter password">
+                <button id="submit-password">Submit</button>
+            </div>
+            <p id="password-error" class="password-error"></p>
+        </div>
+    </div>
+
+    <main id="protected-content" class="project-page" style="display: none;">
+        <!-- Hero Section -->
+        <div class="project-hero-wrapper">
+            <section class="project-hero">
+                <img src="assets/synapse/cover.png" alt="Synapse hero" class="project-hero-img">
+            </section>
+        </div>
+
+        <!-- Project Info -->
+        <section class="project-info">
+            <div class="project-header">
+                <h1>Synapse.</h1>
+                <p class="subtitle">Integrating AI and scalable design systems for digital media.</p>
+            </div>
+            
+            <div class="project-overview">
+                <div class="overview-left">
+                    <h3>Overview</h3>
+                    <p>Work across Handelsblatt Media Group covering three core areas: scaling the design system with WCAG compliant components and tokens, designing conversational UI for ChatGPT and Claude MCPs, and guiding external agencies through clear UI standards, alongside redesigns under CMS constraints.</p>
+                </div>
+                <div class="overview-right">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>UX/UI Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Timeline</h4>
+                        <p>Apr. 2026 - Present</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Deliverables</h4>
+                        <p>Design System Components &amp; Tokens,<br>Conversational UI &amp; AI Agents,<br>Agency Guidelines &amp; CMS Redesign</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Context and Scope Block -->
+        <section class="responsive-block synapse-scope-block" style="margin-top: 120px; margin-bottom: 160px;">
+            <div class="synapse-scope-left">
+                <img src="assets/synapse/Business Context and Scope.png" alt="Business Context and Scope" class="synapse-scope-img zoomable-img needs-white-bg" data-gallery="scope">
+            </div>
+            <div class="content-left synapse-scope-text">
+                <h2>Business Context and Scope</h2>
+                <p>At Handelsblatt Media Group, the baseline scope centered on maintaining and scaling the shared design foundations across two distinct editorial brands: Handelsblatt and WirtschaftsWoche.</p>
+                <p>As the organization set its strategic direction toward proprietary AI products, design expanded to explore reader-facing <strong>conversational interfaces</strong> externally while leveraging <strong>internal AI tooling</strong> to drive delivery efficiency.</p>
+                <p>This required evolving the design infrastructure toward <strong>AI-readiness</strong>—systematically closing core component gaps, standardizing design tokens, and elevating delivery standards, all while navigating the practical constraints of legacy surface redesigns and external partner alignment.</p>
+            </div>
+        </section>
+
+        <!-- Refining Core Components and Standards Block -->
+        <section class="responsive-block synapse-components-block" style="margin-bottom: 160px;">
+            <div class="content-left full-width-text" style="grid-column: 1 / -1; margin-bottom: 40px;">
+                <h2>Refining Core Components and Standards</h2>
+                <p style="max-width: 1000px;">To resolve recurring component gaps, I led the design and documentation for Modals and Tooltips. Grounded in existing semantic tokens, I specified styling for both brands, ensured <strong>WCAG compliance</strong>, and defined key edge case rules. Working closely with developers and designers through reviews under the four eyes principle, while also supporting reviews on other system tickets, this work streamlined developer handoffs and contributed to overall <strong>AI readiness</strong>.</p>
+            </div>
+            
+            <div class="synapse-components-grid">
+                <div class="synapse-comp-left">
+                    <img src="assets/synapse/Refining Core Components and Standards-1.png" alt="Refining Core Components and Standards" class="zoomable-img needs-white-bg" data-gallery="components">
+                </div>
+                <div class="synapse-comp-right">
+                    <img src="assets/synapse/Refining Core Components and Standards-2.png?v=2" alt="Viewport collision" class="zoomable-img needs-white-bg" data-gallery="components">
+                    <img src="assets/synapse/Refining Core Components and Standards-3.png?v=2" alt="Do's and Don'ts" class="zoomable-img needs-white-bg" data-gallery="components">
+                </div>
+            </div>
+        </section>
+
+        <!-- Balancing Platform Rules and Brand Identity Block -->
+        <section class="responsive-block synapse-platform-block" style="margin-bottom: 80px;">
+            <div class="synapse-platform-img-col">
+                <img src="assets/synapse/Balancing Platform Rules and Brand Identity.png" alt="Balancing Platform Rules and Brand Identity" class="zoomable-img needs-white-bg" data-gallery="platform">
+            </div>
+            <div class="content-left synapse-platform-text">
+                <h2>Balancing Platform Rules and Brand Identity</h2>
+                <p>We launched an MCP connector allowing readers to access Handelsblatt coverage seamlessly inside Claude and ChatGPT. Given the minimal visual flexibility of external chat interfaces, my core focus was analyzing how to create <strong>distinct brand presence</strong>. By aligning official platform rules with our brand identity, I designed and delivered <strong>structured conversational screens</strong> that make our editorial voice immediately recognizable.</p>
+            </div>
+        </section>
+
+        <!-- Automating Workflows with Custom Agents Block -->
+        <section class="responsive-block synapse-agents-block" style="margin-bottom: 160px;">
+            <div class="content-left synapse-agents-text">
+                <h2>Automating Workflows with Custom Agents</h2>
+                <p>Alongside external interfaces, I initiated two internal agents on Langdock to reduce team overhead. The first guides designers through structured prompt constraints to generate <strong>brand consistent illustrations</strong> for direct production use. The second <strong>automates our design system inbox</strong>, producing daily and weekly digests to spot component gaps while drafting replies from existing documentation to lighten routine support work.</p>
+            </div>
+            <div class="synapse-agents-img-col">
+                <img src="assets/synapse/Automating Workflows with Custom Agents.png" alt="Automating Workflows with Custom Agents" class="zoomable-img needs-white-bg" data-gallery="agents">
+            </div>
+        </section>
+
+        <!-- Guiding Agency Development for the Abo Shop Block -->
+        <section class="responsive-block synapse-abo-block" style="margin-bottom: 160px;">
+            <div class="synapse-abo-grid">
+                <div class="synapse-abo-left">
+                    <img src="assets/synapse/Guiding Agency Development for the Abo Shop-1.png" alt="Abo Shop Template Grid" class="zoomable-img" data-gallery="abo-shop">
+                    <img src="assets/synapse/Guiding Agency Development for the Abo Shop-2.png" alt="Abo Shop Wireframe" class="zoomable-img" data-gallery="abo-shop">
+                </div>
+                <div class="synapse-abo-right">
+                    <img src="assets/synapse/Guiding Agency Development for the Abo Shop-3.png" alt="Typography Usage by Template" class="zoomable-img" data-gallery="abo-shop">
+                </div>
+            </div>
+            
+            <div class="content-left full-width-text" style="grid-column: 1 / -1; margin-top: 48px;">
+                <h2>Guiding Agency Development for the Abo Shop</h2>
+                <p style="max-width: 1000px;">I was responsible for delivering the Abo Shop interface guidelines to <strong>assist our external agency</strong> during development and support future iterations. Across templates, I structured rules for grid, spacing, typography tokens, and visual dos and donts into a clear guide. Before handing the specification over to Vertrieb, I organized a <strong>peer review</strong> with two design colleagues, and the guide received positive feedback for clarifying external implementation.</p>
+            </div>
+        </section>
+
+        <!-- Migrating WiWo Club within CMS Constraints Block -->
+        <section class="responsive-block synapse-cms-block" style="margin-bottom: 160px;">
+            <div class="synapse-cms-top">
+                <div class="content-left synapse-cms-text">
+                    <h2>Migrating WiWo Club within CMS Constraints</h2>
+                    <p>Addressing legacy architecture risks and visual fragmentation, I was responsible for migrating the WiWo Club event pages onto our core platform. The primary challenge was translating existing event content into our <strong>modular Livingdocs CMS components</strong> without losing editorial flexibility. By establishing standardized page structures, I aligned the event experience with our active design system while eliminating data security vulnerabilities.</p>
+                </div>
+                <div class="synapse-cms-top-right">
+                    <img src="assets/synapse/Migrating WiWo Club within CMS Constraints-1.png" alt="Legacy Architecture" class="zoomable-img needs-white-bg" data-gallery="cms">
+                </div>
+            </div>
+            
+            <div class="synapse-cms-bottom">
+                <div class="synapse-cms-bottom-left">
+                    <img src="assets/synapse/Migrating WiWo Club within CMS Constraints-2.png" alt="Livingdocs Modular Setup" class="zoomable-img needs-white-bg" data-gallery="cms">
+                </div>
+                <div class="synapse-cms-bottom-right">
+                    <img src="assets/synapse/Migrating WiWo Club within CMS Constraints-3.png" alt="WirtschaftsWoche Club Redesign" class="zoomable-img needs-white-bg" data-gallery="cms">
+                </div>
+            </div>
+        </section>
+
+        <!-- You May Also Like -->
+        <section class="related-projects">
+            <h3>You may also like</h3>
+            <div class="related-grid">
+                <a href="mater.html" class="related-item">
+                    <img src="assets/mater/Project-01_Cover.jpg" alt="māter" loading="lazy">
+                </a>
+                <a href="evolution.html" class="related-item">
+                    <img src="assets/evolution/Project-02_Cover.jpg" alt="Evolution" loading="lazy">
+                </a>
+                <a href="trevo.html" class="related-item">
+                    <img src="assets/trevo/Project-03_Cover.jpg" alt="Trevo" loading="lazy">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Copyright ©2026 All rights reserved | Siyu Li, Aachen, Germany</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <script src="script.js?v=2"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('password-overlay');
+            const content = document.getElementById('protected-content');
+            const input = document.getElementById('project-password');
+            const btn = document.getElementById('submit-password');
+            const error = document.getElementById('password-error');
+            
+            // Check session storage so user doesn't have to re-enter during same session
+            if (sessionStorage.getItem('synapse_unlocked') === 'true') {
+                overlay.style.display = 'none';
+                content.style.display = 'block';
+                return;
+            }
+
+            const checkPassword = () => {
+                if (input.value === 'works' || input.value.trim().toLowerCase() === 'works') {
+                    sessionStorage.setItem('synapse_unlocked', 'true');
+                    overlay.style.display = 'none';
+                    content.style.display = 'block';
+                    
+                    // Trigger scroll animation for hero if needed since it was hidden
+                    window.dispatchEvent(new Event('resize')); 
+                } else {
+                    error.style.display = 'block';
+                    error.textContent = 'Incorrect password. Please try again.';
+                    input.value = '';
+                    btn.classList.remove('active');
+                }
+            };
+
+            const validateInput = () => {
+                if (input.value === 'works' || input.value.trim().toLowerCase() === 'works') {
+                    btn.classList.add('active');
+                    error.style.display = 'none';
+                } else {
+                    btn.classList.remove('active');
+                }
+            };
+
+            input.addEventListener('input', validateInput);
+            btn.addEventListener('click', checkPassword);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') checkPassword();
+            });
+        });
+    </script>
+</body>
+</html>

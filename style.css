@@ -2321,7 +2321,7 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
 
 .lightbox-white-bg {
     background-color: #ffffff !important;
-    padding: 20px;
+    padding: 24px;
     border-radius: 12px;
 }
 
@@ -4002,3 +4002,334 @@ div.carousel-dots-container.mobile-only.hide-dots-force {
         white-space: normal;
     }
 }
+
+/* ==========================================================================
+   Synapse Project Styles
+   ========================================================================== */
+.synapse-scope-block {
+    grid-template-columns: 11fr 9fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.synapse-scope-left {
+    width: 100%;
+}
+
+.synapse-scope-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
+    .synapse-scope-img:hover {
+        transform: translateY(-6px) scale(1.02);
+    }
+}
+
+.synapse-scope-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 28px;
+    line-height: 1.3;
+}
+
+.synapse-scope-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 24px;
+}
+
+.synapse-scope-text p:last-child {
+    margin-bottom: 0;
+}
+
+.synapse-gradient-text,
+.synapse-page .responsive-block strong {
+    background: linear-gradient(90deg, #BA00BD 0%, #3F00BD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #BA00BD; /* Fallback */
+    font-weight: 600;
+}
+
+.synapse-page .password-input-group button.active {
+    background: linear-gradient(90deg, #BA00BD 0%, #3F00BD 100%);
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .synapse-scope-block {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+/* Synapse - Components Block */
+.synapse-components-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.synapse-components-grid {
+    display: grid;
+    grid-template-columns: 1.78fr 1fr;
+    gap: 60px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.synapse-comp-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.synapse-comp-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.synapse-components-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
+    .synapse-components-grid img:hover {
+        transform: translateY(-6px) scale(1.02);
+    }
+}
+
+@media (max-width: 1024px) {
+    .synapse-components-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+    .synapse-comp-right {
+        height: auto;
+        gap: 24px;
+        justify-content: flex-start;
+    }
+}
+
+/* Synapse - Platform Rules & Custom Agents Blocks */
+.synapse-platform-block {
+    grid-template-columns: 11fr 9fr;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px !important;
+}
+
+.synapse-platform-img-col img,
+.synapse-agents-img-col img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
+    .synapse-platform-img-col img:hover,
+    .synapse-agents-img-col img:hover {
+        transform: translateY(-6px) scale(1.02);
+    }
+}
+
+.synapse-platform-text h2,
+.synapse-agents-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 28px;
+    line-height: 1.3;
+}
+
+.synapse-platform-text p,
+.synapse-agents-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Synapse - Custom Agents Block */
+.synapse-agents-block {
+    grid-template-columns: 9fr 11fr;
+    align-items: center;
+    gap: 80px;
+}
+
+@media (max-width: 1024px) {
+    .synapse-platform-block,
+    .synapse-agents-block {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .synapse-agents-block .synapse-agents-text {
+        order: 1;
+    }
+    .synapse-agents-block .synapse-agents-img-col {
+        order: 2;
+    }
+}
+
+/* Synapse - Abo Shop Block */
+.synapse-abo-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.synapse-abo-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.13fr;
+    gap: 40px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.synapse-abo-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.synapse-abo-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.synapse-abo-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+    border-radius: 4px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
+    .synapse-abo-grid img:hover {
+        transform: translateY(-6px) scale(1.02);
+    }
+}
+
+@media (max-width: 1024px) {
+    .synapse-abo-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        align-items: center;
+    }
+    .synapse-abo-left {
+        height: auto;
+        gap: 24px;
+        justify-content: flex-start;
+    }
+}
+
+/* Synapse - CMS Constraints Block */
+.synapse-cms-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.synapse-cms-top {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 40px;
+    align-items: end;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.synapse-cms-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.synapse-cms-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 0;
+}
+
+.synapse-cms-top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.synapse-cms-top-right img {
+    width: 100%;
+    max-width: 65%;
+    height: auto;
+    display: block;
+}
+
+.synapse-cms-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1.26fr;
+    gap: 24px;
+    align-items: end;
+    width: 100%;
+}
+
+.synapse-cms-bottom-left,
+.synapse-cms-bottom-right {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.synapse-cms-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1440px) and (hover: hover) and (pointer: fine) {
+    .synapse-cms-block img:hover {
+        transform: translateY(-6px) scale(1.02);
+    }
+}
+
+@media (max-width: 1024px) {
+    .synapse-cms-top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .synapse-cms-top-right {
+        justify-content: flex-start;
+    }
+    .synapse-cms-top-right img {
+        max-width: 85%;
+    }
+    .synapse-cms-bottom {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+
